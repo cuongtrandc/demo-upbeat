@@ -8,9 +8,12 @@
     background-color: var(--background);
   "
 >
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;200;300;400;500;600;700;800;900&family=Geist:wght@100;200;300;400;500;600;700;800;900&family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700;800;900&family=PT+Serif:wght@400;700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Shantell+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
   <html>
     <head>
       <style>
@@ -127,7 +130,16 @@
             line-height: 1.5;
             -webkit-text-size-adjust: 100%;
             tab-size: 4;
-            font-family: "Inter", Arial, sans-serif;
+            font-family: var(
+              --default-font-family,
+              ui-sans-serif,
+              system-ui,
+              sans-serif,
+              "Apple Color Emoji",
+              "Segoe UI Emoji",
+              "Segoe UI Symbol",
+              "Noto Color Emoji"
+            );
             font-feature-settings: var(--default-font-feature-settings, normal);
             font-variation-settings: var(
               --default-font-variation-settings,
@@ -166,7 +178,17 @@
           kbd,
           samp,
           pre {
-            font-family: "Inter", Arial, sans-serif;
+            font-family: var(
+              --default-mono-font-family,
+              ui-monospace,
+              SFMono-Regular,
+              Menlo,
+              Monaco,
+              Consolas,
+              "Liberation Mono",
+              "Courier New",
+              monospace
+            );
             font-feature-settings: var(
               --default-mono-font-feature-settings,
               normal
@@ -995,6 +1017,9 @@
           .pt-16 {
             padding-top: calc(var(--spacing) * 16);
           }
+          .pt-20 {
+            padding-top: calc(var(--spacing) * 20);
+          }
           .pt-32 {
             padding-top: calc(var(--spacing) * 32);
           }
@@ -1020,16 +1045,16 @@
             text-align: left;
           }
           .font-\[family-name\:var\(--font-editorial\)\] {
-            font-family: "Inter", Arial, sans-serif;
+            font-family: var(--font-editorial);
           }
           .font-\[family-name\:var\(--font-tech\)\] {
-            font-family: "Inter", Arial, sans-serif;
+            font-family: var(--font-tech);
           }
           .font-body {
-            font-family: "Inter", Arial, sans-serif;
+            font-family: var(--font-body);
           }
           .font-serif {
-            font-family: "Inter", Arial, sans-serif;
+            font-family: var(--font-serif);
           }
           .text-2xl {
             font-size: var(--text-2xl);
@@ -2054,57 +2079,52 @@
       <link
         rel="preload"
         as="image"
-        href="/api/flow-image/21%3A9%0Awide%20shot%20of%20a%20modern%20dark%20high-tech%20control%20room%20with%20glowing%20blue%20screens%20and%20dashboards"
+        href="/api/flow-image/3%3A4%0Aprofessional%20portrait%20of%20a%20man%20in%20suit%20dark%20background%20cinematic%20lighting"
       />
       <link
         rel="preload"
         as="image"
-        href="/api/flow-image/16%3A9%0Aclose%20up%20of%20developers%20collaborating%20in%20a%20dark%20modern%20office%2C%20glowing%20screens"
+        href="/api/flow-image/3%3A4%0Aprofessional%20portrait%20of%20a%20smiling%20woman%20in%20business%20attire%20warm%20office%20lighting"
       />
       <link
         rel="preload"
         as="image"
-        href="/api/flow-image/16%3A9%0Aabstract%20digital%20data%20visualization%20networking%20nodes%20glowing%20in%20dark%20purple"
+        href="/api/flow-image/3%3A4%0Aprofessional%20portrait%20of%20an%20asian%20man%20in%20a%20creative%20studio%20looking%20confident"
       />
       <link
         rel="preload"
         as="image"
-        href="/api/flow-image/21%3A9%0Amassive%20tech%20conference%20stage%20with%20large%20LED%20screens%20showing%20data%20graphs%2C%20dark%20room%2C%20cinematic%20lighting"
+        href="/api/flow-image/16%3A9%0Alarge%20creative%20team%20group%20photo%2C%20dark%20background%2C%20everyone%20smiling"
       />
       <link
         rel="preload"
         as="image"
-        href="/api/flow-image/16%3A9%0Aexecutives%20shaking%20hands%20in%20a%20sleek%20dark%20boardroom"
+        href="/api/flow-image/1%3A1%0Apeople%20celebrating%20holi%20festival%20with%20colorful%20powder%2C%20happy%20faces"
       />
       <link
         rel="preload"
         as="image"
-        href="/api/flow-image/16%3A9%0Afuturistic%20server%20room%20with%20glowing%20purple%20and%20blue%20LED%20lights"
+        href="/api/flow-image/3%3A4%0Aperson%20playing%20paintball%20outdoors%2C%20action%20shot%2C%20dynamic"
       />
       <link
         rel="preload"
         as="image"
-        href="/api/flow-image/4%3A3%0Ared%20exhibition%20hall%20with%20flags%20and%20historical%20displays%2C%20dramatic%20lighting"
+        href="/api/flow-image/16%3A9%0Ateam%20casual%20meeting%20around%20a%20high%20table%20in%20a%20bright%20modern%20office"
       />
       <link
         rel="preload"
         as="image"
-        href="/api/flow-image/4%3A3%0Asleek%20modern%20car%20exhibition%20with%20dramatic%20red%20and%20blue%20lighting%2C%20futuristic"
+        href="/api/flow-image/16%3A9%0Acolleagues%20chatting%20and%20eating%20together%20in%20a%20modern%20office%20pantry"
       />
       <link
         rel="preload"
         as="image"
-        href="/api/flow-image/4%3A3%0Alarge%20theatrical%20stage%20with%20dancers%20in%20white%20uniforms%2C%20dark%20blue%20background%20with%20crest"
-      />
-      <link
-        rel="preload"
-        as="image"
-        href="/api/flow-image/4%3A3%0Asteve%20jobs%20style%20presentation%20on%20dark%20stage%20with%20glowing%20blue%20hologram"
+        href="/api/flow-image/9%3A16%0Ateam%20building%20workshop%2C%20people%20making%20crafts%20around%20a%20long%20table"
       />
     </head>
     <body>
       <div
-        class="bg-event-bg-end text-event-text font-body w-full min-h-screen"
+        class="bg-upbeat-bg text-white font-body w-full min-h-screen selection:bg-upbeat-primary selection:text-white"
       >
         <header
           class="w-full bg-upbeat-bg flex justify-center py-6 px-6 sticky top-0 z-50 border-b border-white/5"
@@ -2116,7 +2136,8 @@
             <nav
               class="hidden md:flex items-center gap-8 bg-upbeat-nav border border-upbeat-nav-border rounded-full px-8 py-3 backdrop-blur-md"
             >
-              <a href="./about.html"
+              <a
+              href="./about.html"
                 class="text-white/80 hover:text-white text-sm font-medium transition-colors cursor-pointer"
                 data-media-type="banani-button"
                 ><span data-file="/components/UpbeatHeader.jsx" data-idx="2"
@@ -2128,13 +2149,15 @@
                 ><span data-file="/components/UpbeatHeader.jsx" data-idx="3"
                   >Dự án</span
                 ></a
-              ><a href="./service.html"
+              ><a
+              href="./service.html"
                 class="text-white/80 hover:text-white text-sm font-medium transition-colors cursor-pointer"
                 data-media-type="banani-button"
                 ><span data-file="/components/UpbeatHeader.jsx" data-idx="4"
                   >Dịch vụ</span
                 ></a
-              ><a href="./blog.html"
+              ><a
+              href="./blog.html"
                 class="text-white/80 hover:text-white text-sm font-medium transition-colors cursor-pointer"
                 data-media-type="banani-button"
                 ><span data-file="/components/UpbeatHeader.jsx" data-idx="5"
@@ -2142,7 +2165,7 @@
                 ></a
               >
             </nav>
-             <a href="./index.html#contact-with">
+            <a href="./index.html#contact-with">
               <button
                 class="bg-upbeat-primary text-upbeat-primary-foreground px-8 py-3 rounded-full text-sm font-bold hover:bg-upbeat-primary/90 transition-colors shadow-[0_0_20px_rgba(112,93,242,0.3)]"
                 data-media-type="banani-button"
@@ -2154,460 +2177,428 @@
             </a>
           </div>
         </header>
-        <div class="max-w-7xl mx-auto px-6 pt-12">
-          <div class="flex flex-col items-center text-center mb-16">
-            <h1
-              class="text-5xl md:text-7xl font-[family-name:var(--font-tech)] font-black mb-4 leading-tight text-white uppercase tracking-tight"
-            >
-              <span data-file="/screens/new_screen1.jsx" data-idx="0"
-                >Dự Án Chuyển Đổi Số Toàn Diện</span
-              >
-            </h1>
-            <div class="text-xl text-event-muted font-medium tracking-wide">
-              <span data-file="/screens/new_screen1.jsx" data-idx="1"
-                >Năm 2023 - 2024</span
-              >
-            </div>
-          </div>
-          <div
-            class="flex flex-col md:flex-row gap-12 mb-20 border-t border-b border-event-border py-12"
+        <main>
+          <section
+            class="relative pt-32 pb-24 px-6 border-b border-white/5 overflow-hidden"
           >
-            <div class="w-full md:w-1/3 flex flex-col gap-8 shrink-0">
-              <div>
-                <div
-                  class="text-sm uppercase tracking-widest text-event-muted mb-2 font-semibold"
-                >
-                  <span data-file="/screens/new_screen1.jsx" data-idx="2"
-                    >Đối tác</span
-                  >
-                </div>
-                <div class="text-2xl font-bold text-white">
-                  <span data-file="/screens/new_screen1.jsx" data-idx="3"
-                    >Tập đoàn Công nghệ VinGroup</span
-                  >
-                </div>
-              </div>
-              <div>
-                <div
-                  class="text-sm uppercase tracking-widest text-event-muted mb-2 font-semibold"
-                >
-                  <span data-file="/screens/new_screen1.jsx" data-idx="4"
-                    >Dịch vụ</span
-                  >
-                </div>
-                <div class="text-xl font-medium text-white">
-                  <span data-file="/screens/new_screen1.jsx" data-idx="5"
-                    >Tư vấn chiến lược, Triển khai hạ tầng Cloud, Phát triển ứng
-                    dụng</span
-                  >
-                </div>
-              </div>
-              <div>
-                <div
-                  class="text-sm uppercase tracking-widest text-event-muted mb-2 font-semibold"
-                >
-                  <span data-file="/screens/new_screen1.jsx" data-idx="6"
-                    >Thời gian thực hiện</span
-                  >
-                </div>
-                <div class="text-xl font-medium text-white">
-                  <span data-file="/screens/new_screen1.jsx" data-idx="7"
-                    >18 Tháng</span
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="w-full md:w-2/3 flex flex-col gap-6">
+            <div
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-upbeat-primary/20 blur-[120px] rounded-full pointer-events-none"
+            ></div>
+            <div class="max-w-4xl mx-auto text-center relative z-10">
               <div
-                class="text-sm uppercase tracking-widest text-event-muted mb-2 font-semibold"
+                class="inline-block px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-upbeat-primary text-sm font-bold uppercase tracking-widest mb-8"
               >
-                <span data-file="/screens/new_screen1.jsx" data-idx="8"
-                  >Mô tả dự án</span
+                <span data-file="/screens/new_screen2.jsx" data-idx="0"
+                  >Câu chuyện của chúng tôi</span
                 >
               </div>
+              <h1
+                class="text-5xl md:text-7xl font-black mb-8 leading-tight tracking-tight"
+              >
+                <span data-file="/screens/new_screen2.jsx" data-idx="1"
+                  >Kiến Tạo Những Khoảnh Khắc
+                </span>
+                <span
+                  class="text-transparent bg-clip-text bg-gradient-to-r from-upbeat-primary to-purple-400"
+                  ><span data-file="/screens/new_screen2.jsx" data-idx="2"
+                    >Đáng Nhớ</span
+                  ></span
+                >
+              </h1>
               <p
-                class="text-xl leading-relaxed text-white opacity-90 font-medium"
+                class="text-xl text-white/60 leading-relaxed max-w-3xl mx-auto"
               >
-                <span data-file="/screens/new_screen1.jsx" data-idx="9"
-                  >Sự kiện được tổ chức với quy mô sản xuất chưa từng có, 
-                  bao gồm sân khấu trải rộng hơn 10.000 mét vuông,
-                   3.190 mét vuông màn hình LED, gần 6TB nội dung hình ảnh 3D
-                    và sự vận hành đồng bộ của hơn 3.000 thiết bị âm thanh,
-                     ánh sáng và lập bản đồ laser, được hỗ trợ bởi 7.000 nghệ sĩ biểu diễn 
-                     và 1.000 nhân viên kỹ thuật. Một hệ thống tích hợp hoàn chỉnh về lập 
-                     bản đồ chiếu 3D, lập trình mã thời gian tự động và máy chủ hiệu năng cao 
-                     đảm bảo sự đồng bộ chính xác giữa hình ảnh, âm thanh và hiệu ứng, đáp ứng
-                      nhu cầu vận hành của hàng chục nghìn khán giả trực tiếp.</span
-                >
-              </p>
-              <p class="text-lg leading-relaxed text-event-muted">
-                <span data-file="/screens/new_screen1.jsx" data-idx="10"
-                  >Chương trình này không chỉ là một dự án quốc gia trọng điểm mà còn là 
-                  minh chứng cho năng lực tổ chức, kỷ luật vận hành và chuyên môn của Upbeat Media
-                   trong việc cung cấp các giải pháp kỹ thuật và công nghệ quy mô lớn ở cấp quốc gia.</span
+                <span data-file="/screens/new_screen2.jsx" data-idx="3"
+                  >Upbeat Event &amp; Media được sinh ra với sứ mệnh biến mọi ý
+                  tưởng thành hiện thực, mang đến những trải nghiệm sự kiện và
+                  chiến dịch truyền thông đột phá, chạm đến cảm xúc của khán
+                  giả.</span
                 >
               </p>
             </div>
-          </div>
-          <div class="mb-24">
-            <h2
-              class="text-3xl font-[family-name:var(--font-tech)] font-bold mb-10 text-white uppercase tracking-widest border-l-4 border-project-link pl-4"
-            >
-              <span data-file="/screens/new_screen1.jsx" data-idx="11"
-                >Thư viện hình ảnh</span
-              >
-            </h2>
-            <div class="flex flex-col gap-6">
-              <div
-                class="w-full rounded-2xl overflow-hidden border border-event-border shadow-2xl"
-              >
-                <img
-                  data-query="wide shot of a modern dark high-tech control room with glowing blue screens and dashboards"
-                  data-aspect-ratio="21:9"
-                  style="aspect-ratio: 21/9"
-                  src="https://cdn.prod.website-files.com/68c669fdfded2a0038b3e8e8/6985ab110ab00e1a530f2f56_F1090058%20(1)-p-2000.webp"
-                  class="w-full object-cover"
-                />
-              </div>
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div
-                  class="w-full rounded-2xl overflow-hidden border border-event-border shadow-xl"
-                >
-                  <img
-                    data-query="close up of developers collaborating in a dark modern office, glowing screens"
-                    data-aspect-ratio="16:9"
-                    style="aspect-ratio: 16/9"
-                    src="https://cdn.prod.website-files.com/68c669fdfded2a0038b3e8e8/6985ab10dd5e8946b928aea0_NHAT-2752%20(1)-p-2000.webp"
-                    class="w-full object-cover h-full"
-                  />
-                </div>
-                <div
-                  class="w-full rounded-2xl overflow-hidden border border-event-border shadow-xl"
-                >
-                  <img
-                    data-query="abstract digital data visualization networking nodes glowing in dark purple"
-                    data-aspect-ratio="16:9"
-                    style="aspect-ratio: 16/9"
-                    src="https://cdn.prod.website-files.com/68c669fdfded2a0038b3e8e8/6985ab11c28f4235bff8bbfd_L1110491%20(1)-p-2000.webp"
-                    class="w-full object-cover h-full"
-                  />
-                </div>
+          </section>
+          <section class="py-32 px-6 border-b border-white/5 bg-[#050505]">
+            <div class="max-w-6xl mx-auto">
+              <div class="text-center mb-20">
+                <h2 class="text-4xl font-bold mb-4">
+                  <span data-file="/screens/new_screen2.jsx" data-idx="4"
+                    >Lịch Sử Phát Triển</span
+                  >
+                </h2>
+                <p class="text-white/60">
+                  <span data-file="/screens/new_screen2.jsx" data-idx="5"
+                    >Chặng đường không ngừng vươn xa của Upbeat</span
+                  >
+                </p>
               </div>
               <div
-                class="w-full rounded-2xl overflow-hidden border border-event-border shadow-2xl"
+                class="relative border-l border-white/10 ml-4 md:ml-1/2 md:translate-x-[-1px] space-y-16"
               >
-                <img
-                  data-query="massive tech conference stage with large LED screens showing data graphs, dark room, cinematic lighting"
-                  data-aspect-ratio="21:9"
-                  style="aspect-ratio: 21/9"
-                  src="https://cdn.prod.website-files.com/68c669fdfded2a0038b3e8e8/6985ab10cbd6cc22e0747aaf_BUDX2297%20(1)-p-2000.webp"
-                  class="w-full object-cover"
-                />
-              </div>
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div
-                  class="w-full rounded-2xl overflow-hidden border border-event-border shadow-xl"
+                  class="relative pl-8 md:pl-0 w-full md:w-1/2 md:pr-12 md:text-right"
                 >
-                  <img
-                    data-query="executives shaking hands in a sleek dark boardroom"
-                    data-aspect-ratio="16:9"
-                    style="aspect-ratio: 16/9"
-                    src="https://cdn.prod.website-files.com/68c669fdfded2a0038b3e8e8/6985ab101351612265179360_DAN-52%20(1)-p-2000.webp"
-                    class="w-full object-cover h-full"
-                  />
+                  <div
+                    class="absolute top-0 left-[-5px] md:right-[-5px] md:left-auto w-3 h-3 rounded-full bg-upbeat-primary shadow-[0_0_10px_rgba(112,93,242,0.8)]"
+                  ></div>
+                  <div
+                    class="text-upbeat-primary font-bold text-2xl mb-2 font-[family-name:var(--font-tech)]"
+                  >
+                    <span data-file="/screens/new_screen2.jsx" data-idx="6"
+                      >2018</span
+                    >
+                  </div>
+                  <h3 class="text-xl font-bold mb-3">
+                    <span data-file="/screens/new_screen2.jsx" data-idx="7"
+                      >Khởi nguồn đam mê</span
+                    >
+                  </h3>
+                  <p class="text-white/60 text-sm leading-relaxed">
+                    <span data-file="/screens/new_screen2.jsx" data-idx="8"
+                      >Thành lập với đội ngũ vỏn vẹn 5 thành viên, tập trung vào
+                      việc tổ chức các sự kiện quy mô nhỏ và các chiến dịch
+                      quảng bá trên mạng xã hội cho các startup địa
+                      phương.</span
+                    >
+                  </p>
+                </div>
+                <div class="relative pl-8 md:pl-12 w-full md:w-1/2 md:ml-auto">
+                  <div
+                    class="absolute top-0 left-[-5px] w-3 h-3 rounded-full bg-white shadow-[0_0_10px_rgba(255,255,255,0.8)]"
+                  ></div>
+                  <div
+                    class="text-white font-bold text-2xl mb-2 font-[family-name:var(--font-tech)]"
+                  >
+                    <span data-file="/screens/new_screen2.jsx" data-idx="9"
+                      >2020</span
+                    >
+                  </div>
+                  <h3 class="text-xl font-bold mb-3">
+                    <span data-file="/screens/new_screen2.jsx" data-idx="10"
+                      >Bước chuyển mình</span
+                    >
+                  </h3>
+                  <p class="text-white/60 text-sm leading-relaxed">
+                    <span data-file="/screens/new_screen2.jsx" data-idx="11"
+                      >Mở rộng quy mô lên 30 nhân sự, thành lập các phòng ban
+                      chuyên biệt. Ký kết hợp đồng truyền thông dài hạn với 3
+                      tập đoàn lớn, khẳng định vị thế trên thị trường.</span
+                    >
+                  </p>
                 </div>
                 <div
-                  class="w-full rounded-2xl overflow-hidden border border-event-border shadow-xl"
+                  class="relative pl-8 md:pl-0 w-full md:w-1/2 md:pr-12 md:text-right"
                 >
-                  <img
-                    data-query="futuristic server room with glowing purple and blue LED lights"
-                    data-aspect-ratio="16:9"
-                    style="aspect-ratio: 16/9"
-                    src="https://cdn.prod.website-files.com/68c669fdfded2a0038b3e8e8/69a7d99009ea2f4d19f95dd6_z7465994903275_31dd2cc6e70c80f66f171c25238205a1.avif"
-                    class="w-full object-cover h-full"
-                  />
+                  <div
+                    class="absolute top-0 left-[-5px] md:right-[-5px] md:left-auto w-3 h-3 rounded-full bg-upbeat-primary shadow-[0_0_10px_rgba(112,93,242,0.8)]"
+                  ></div>
+                  <div
+                    class="text-upbeat-primary font-bold text-2xl mb-2 font-[family-name:var(--font-tech)]"
+                  >
+                    <span data-file="/screens/new_screen2.jsx" data-idx="12"
+                      >2023</span
+                    >
+                  </div>
+                  <h3 class="text-xl font-bold mb-3">
+                    <span data-file="/screens/new_screen2.jsx" data-idx="13"
+                      >Kỷ nguyên số &amp; Vươn xa</span
+                    >
+                  </h3>
+                  <p class="text-white/60 text-sm leading-relaxed">
+                    <span data-file="/screens/new_screen2.jsx" data-idx="14"
+                      >Áp dụng công nghệ thực tế ảo (VR/AR) vào tổ chức sự kiện.
+                      Tổ chức thành công chuỗi sự kiện âm nhạc quy mô 10,000
+                      khán giả và mở văn phòng đại diện thứ hai.</span
+                    >
+                  </p>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="mb-24">
-            <h2
-              class="text-3xl font-[family-name:var(--font-tech)] font-bold mb-10 text-white uppercase tracking-widest border-l-4 border-project-link pl-4"
-            >
-              <span data-file="/screens/new_screen1.jsx" data-idx="12"
-                >Sự kiện đã triển khai</span
-              >
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <div
-                class="flex flex-col bg-project-card-bg border border-event-border rounded-2xl overflow-hidden shadow-lg relative h-full"
-              >
+          </section>
+          <section class="py-32 px-6 bg-upbeat-bg">
+            <div class="max-w-6xl mx-auto">
+              <div class="text-center mb-24">
                 <div
-                  class="absolute top-4 left-4 right-4 flex justify-between items-start z-10"
+                  class="text-upbeat-primary text-xs font-bold uppercase tracking-widest mb-4"
                 >
-                  <div
-                    class="px-3 py-1 bg-project-tag-bg border border-project-tag-border rounded-full text-xs font-medium text-white backdrop-blur-md"
+                  <span data-file="/screens/new_screen2.jsx" data-idx="15"
+                    >Đội ngũ của chúng tôi</span
                   >
-                    <span data-file="/screens/new_screen1.jsx" data-idx="14"
-                      >Bộ Công an</span
-                    >
-                  </div>
-                  <div
-                    class="px-3 py-1 bg-black/50 border border-white/10 rounded-full text-xs font-medium text-white flex items-center gap-1 backdrop-blur-md"
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                  <span data-file="/screens/new_screen2.jsx" data-idx="16"
+                    >Những chuyên gia đứng sau thành công</span
                   >
-                    <iconify-icon
-                      icon="lucide:calendar"
-                      class="block size-[12px]"
-                      style="font-size: 12px"
-                    ></iconify-icon
-                    ><span data-file="/screens/new_screen1.jsx" data-idx="15"
-                      >Aug 2023</span
-                    >
-                  </div>
-                </div>
-                <div class="relative h-56 w-full">
-                  <img
-                    data-query="red exhibition hall with flags and historical displays, dramatic lighting"
-                    data-aspect-ratio="4:3"
-                    style="aspect-ratio: 4/3"
-                    src="https://cdn.prod.website-files.com/68c669fdfded2a0038b3e8e8/69a7d9911b184b60e9e49a04_z7463184953742_7c75e8480927d218f342d6780b3c08aa.avif"
-                    class="w-full h-full object-cover"
-                  />
-                  <div
-                    class="absolute inset-0 bg-gradient-to-t from-project-card-bg via-project-card-bg/50 to-transparent"
-                  ></div>
-                </div>
-                <div class="p-6 flex flex-col flex-grow -mt-10 relative z-10">
-                  <h3
-                    class="text-xl font-bold font-[family-name:var(--font-tech)] text-white uppercase leading-snug mb-6"
+                </h2>
+                <p class="text-white/60 max-w-2xl mx-auto text-lg">
+                  <span data-file="/screens/new_screen2.jsx" data-idx="17"
+                    >Gặp gỡ những nhà lãnh đạo đam mê và tài năng, những người
+                    đang ngày đêm định hình tương lai của ngành sự kiện và
+                    truyền thông.</span
                   >
-                    <span data-file="/screens/new_screen1.jsx" data-idx="13"
-                      >TRIỂN LÃM CÔNG AN NHÂN DÂN "VÌ AN NINH TỔ QUỐC, VÌ HẠNH
-                      PHÚC NHÂN DÂN"</span
-                    >
-                  </h3>
-                  <div class="mt-auto">
-                    <a href="./project-detail.html"
-                      class="text-project-link font-medium text-sm flex items-center gap-1 hover:text-white transition-colors"
-                      data-media-type="banani-button"
-                      ><span
-                        data-file="/components/ProjectEventCard.jsx"
-                        data-idx="0"
-                        >View Details</span
-                      >
-                      <iconify-icon
-                        icon="lucide:arrow-right"
-                        class="block size-[14px]"
-                        style="font-size: 14px"
-                      ></iconify-icon
-                    ></a>
-                  </div>
-                </div>
+                </p>
               </div>
-              <div
-                class="flex flex-col bg-project-card-bg border border-event-border rounded-2xl overflow-hidden shadow-lg relative h-full"
-              >
+              <div class="flex flex-col gap-24">
                 <div
-                  class="absolute top-4 left-4 right-4 flex justify-between items-start z-10"
+                  class="flex flex-col md:flex-row gap-8 md:gap-16 items-center w-full max-w-5xl mx-auto"
                 >
-                  <div
-                    class="px-3 py-1 bg-project-tag-bg border border-project-tag-border rounded-full text-xs font-medium text-white backdrop-blur-md"
-                  >
-                    <span data-file="/screens/new_screen1.jsx" data-idx="17"
-                      >VinFast</span
+                  <div class="w-full md:w-1/3 shrink-0">
+                    <div
+                      class="rounded-3xl overflow-hidden relative w-full aspect-[3/4] shadow-[0_0_30px_rgba(255,255,255,0.05)] border border-white/10"
                     >
+                      <img
+                        data-query="professional portrait of a man in suit dark background cinematic lighting"
+                        data-aspect-ratio="3:4"
+                        style="aspect-ratio: 3/4"
+                        src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
                   </div>
                   <div
-                    class="px-3 py-1 bg-black/50 border border-white/10 rounded-full text-xs font-medium text-white flex items-center gap-1 backdrop-blur-md"
+                    class="w-full md:w-2/3 flex flex-col justify-center py-6"
                   >
-                    <iconify-icon
-                      icon="lucide:calendar"
-                      class="block size-[12px]"
-                      style="font-size: 12px"
-                    ></iconify-icon
-                    ><span data-file="/screens/new_screen1.jsx" data-idx="18"
-                      >Sep 2023</span
+                    <div
+                      class="text-8xl text-white/5 font-serif leading-none mb-[-40px]"
                     >
-                  </div>
-                </div>
-                <div class="relative h-56 w-full">
-                  <img
-                    data-query="sleek modern car exhibition with dramatic red and blue lighting, futuristic"
-                    data-aspect-ratio="4:3"
-                    style="aspect-ratio: 4/3"
-                    src="https://storage.googleapis.com/banani-generated-images/generated-images/0273b95f-4547-4659-8beb-8f83e20b3ab4.jpg"
-                    class="w-full h-full object-cover"
-                  />
-                  <div
-                    class="absolute inset-0 bg-gradient-to-t from-project-card-bg via-project-card-bg/50 to-transparent"
-                  ></div>
-                </div>
-                <div class="p-6 flex flex-col flex-grow -mt-10 relative z-10">
-                  <h3
-                    class="text-xl font-bold font-[family-name:var(--font-tech)] text-white uppercase leading-snug mb-6"
-                  >
-                    <span data-file="/screens/new_screen1.jsx" data-idx="16"
-                      >TRIỂN LÃM VINFAST "MÃNH LIỆT TINH THẦN VIỆT NAM"</span
+                      "
+                    </div>
+                    <p
+                      class="text-xl md:text-2xl font-bold text-white leading-relaxed mb-8 italic z-10"
                     >
-                  </h3>
-                  <div class="mt-auto">
-                    <a href="./project-detail.html"
-                      class="text-project-link font-medium text-sm flex items-center gap-1 hover:text-white transition-colors"
-                      data-media-type="banani-button"
-                      ><span
-                        data-file="/components/ProjectEventCard.jsx"
-                        data-idx="0"
-                        >View Details</span
+                      "<span data-file="/screens/new_screen2.jsx" data-idx="20"
+                        >Kiến tạo không gian, đánh thức mọi giác quan trong từng
+                        khoảnh khắc. Mỗi sự kiện là một câu chuyện cần được kể
+                        một cách hoàn hảo nhất.</span
+                      >"
+                    </p>
+                    <div class="z-10">
+                      <div class="text-white font-bold text-lg mb-1">
+                        <span data-file="/screens/new_screen2.jsx" data-idx="18"
+                          >Alex Phạm</span
+                        >
+                      </div>
+                      <div
+                        class="text-upbeat-primary text-xs uppercase tracking-widest font-bold"
                       >
-                      <iconify-icon
-                        icon="lucide:arrow-right"
-                        class="block size-[14px]"
-                        style="font-size: 14px"
-                      ></iconify-icon
-                    ></a>
+                        <span data-file="/screens/new_screen2.jsx" data-idx="19"
+                          >Giám đốc sự kiện</span
+                        >
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div
-                class="flex flex-col bg-project-card-bg border border-event-border rounded-2xl overflow-hidden shadow-lg relative h-full"
-              >
                 <div
-                  class="absolute top-4 left-4 right-4 flex justify-between items-start z-10"
+                  class="flex flex-col md:flex-row-reverse gap-8 md:gap-16 items-center w-full max-w-5xl mx-auto"
                 >
-                  <div
-                    class="px-3 py-1 bg-project-tag-bg border border-project-tag-border rounded-full text-xs font-medium text-white backdrop-blur-md"
-                  >
-                    <span data-file="/screens/new_screen1.jsx" data-idx="20"
-                      >Bộ Công an</span
+                  <div class="w-full md:w-1/3 shrink-0">
+                    <div
+                      class="rounded-3xl overflow-hidden relative w-full aspect-[3/4] shadow-[0_0_30px_rgba(255,255,255,0.05)] border border-white/10"
                     >
+                      <img
+                        data-query="professional portrait of a smiling woman in business attire warm office lighting"
+                        data-aspect-ratio="3:4"
+                        style="aspect-ratio: 3/4"
+                        src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
                   </div>
                   <div
-                    class="px-3 py-1 bg-black/50 border border-white/10 rounded-full text-xs font-medium text-white flex items-center gap-1 backdrop-blur-md"
+                    class="w-full md:w-2/3 flex flex-col justify-center py-6"
                   >
-                    <iconify-icon
-                      icon="lucide:calendar"
-                      class="block size-[12px]"
-                      style="font-size: 12px"
-                    ></iconify-icon
-                    ><span data-file="/screens/new_screen1.jsx" data-idx="21"
-                      >Jul 2023</span
+                    <div
+                      class="text-8xl text-white/5 font-serif leading-none mb-[-40px]"
                     >
-                  </div>
-                </div>
-                <div class="relative h-56 w-full">
-                  <img
-                    data-query="large theatrical stage with dancers in white uniforms, dark blue background with crest"
-                    data-aspect-ratio="4:3"
-                    style="aspect-ratio: 4/3"
-                    src="https://storage.googleapis.com/banani-generated-images/generated-images/c6e14f66-e787-469d-9e84-347879cc75dc.jpg"
-                    class="w-full h-full object-cover"
-                  />
-                  <div
-                    class="absolute inset-0 bg-gradient-to-t from-project-card-bg via-project-card-bg/50 to-transparent"
-                  ></div>
-                </div>
-                <div class="p-6 flex flex-col flex-grow -mt-10 relative z-10">
-                  <h3
-                    class="text-xl font-bold font-[family-name:var(--font-tech)] text-white uppercase leading-snug mb-6"
-                  >
-                    <span data-file="/screens/new_screen1.jsx" data-idx="19"
-                      >CÔNG ƯỚC HÀ NỘI</span
+                      "
+                    </div>
+                    <p
+                      class="text-xl md:text-2xl font-bold text-white leading-relaxed mb-8 italic z-10"
                     >
-                  </h3>
-                  <div class="mt-auto">
-                    <a href="./project-detail.html"
-                      class="text-project-link font-medium text-sm flex items-center gap-1 hover:text-white transition-colors"
-                      data-media-type="banani-button"
-                      ><span
-                        data-file="/components/ProjectEventCard.jsx"
-                        data-idx="0"
-                        >View Details</span
+                      "<span data-file="/screens/new_screen2.jsx" data-idx="23"
+                        >Truyền tải thông điệp chân thực, lan tỏa giá trị cốt
+                        lõi của thương hiệu đến hàng triệu người một cách tinh
+                        tế và sâu sắc.</span
+                      >"
+                    </p>
+                    <div class="z-10">
+                      <div class="text-white font-bold text-lg mb-1">
+                        <span data-file="/screens/new_screen2.jsx" data-idx="21"
+                          >Sophia Trần</span
+                        >
+                      </div>
+                      <div
+                        class="text-upbeat-primary text-xs uppercase tracking-widest font-bold"
                       >
-                      <iconify-icon
-                        icon="lucide:arrow-right"
-                        class="block size-[14px]"
-                        style="font-size: 14px"
-                      ></iconify-icon
-                    ></a>
+                        <span data-file="/screens/new_screen2.jsx" data-idx="22"
+                          >Trưởng phòng truyền thông</span
+                        >
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div
-                class="flex flex-col bg-project-card-bg border border-event-border rounded-2xl overflow-hidden shadow-lg relative h-full"
-              >
                 <div
-                  class="absolute top-4 left-4 right-4 flex justify-between items-start z-10"
+                  class="flex flex-col md:flex-row gap-8 md:gap-16 items-center w-full max-w-5xl mx-auto"
                 >
-                  <div
-                    class="px-3 py-1 bg-project-tag-bg border border-project-tag-border rounded-full text-xs font-medium text-white backdrop-blur-md"
-                  >
-                    <span data-file="/screens/new_screen1.jsx" data-idx="23"
-                      >Tập đoàn Công nghệ</span
+                  <div class="w-full md:w-1/3 shrink-0">
+                    <div
+                      class="rounded-3xl overflow-hidden relative w-full aspect-[3/4] shadow-[0_0_30px_rgba(255,255,255,0.05)] border border-white/10"
                     >
+                      <img
+                        data-query="professional portrait of an asian man in a creative studio looking confident"
+                        data-aspect-ratio="3:4"
+                        style="aspect-ratio: 3/4"
+                        src="https://plus.unsplash.com/premium_photo-1661598503906-011f2707594e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
                   </div>
                   <div
-                    class="px-3 py-1 bg-black/50 border border-white/10 rounded-full text-xs font-medium text-white flex items-center gap-1 backdrop-blur-md"
+                    class="w-full md:w-2/3 flex flex-col justify-center py-6"
                   >
-                    <iconify-icon
-                      icon="lucide:calendar"
-                      class="block size-[12px]"
-                      style="font-size: 12px"
-                    ></iconify-icon
-                    ><span data-file="/screens/new_screen1.jsx" data-idx="24"
-                      >Oct 2023</span
+                    <div
+                      class="text-8xl text-white/5 font-serif leading-none mb-[-40px]"
                     >
-                  </div>
-                </div>
-                <div class="relative h-56 w-full">
-                  <img
-                    data-query="steve jobs style presentation on dark stage with glowing blue hologram"
-                    data-aspect-ratio="4:3"
-                    style="aspect-ratio: 4/3"
-                    src="https://storage.googleapis.com/banani-generated-images/generated-images/759ee212-990a-44ec-8cb3-4d43f79f4a43.jpg"
-                    class="w-full h-full object-cover"
-                  />
-                  <div
-                    class="absolute inset-0 bg-gradient-to-t from-project-card-bg via-project-card-bg/50 to-transparent"
-                  ></div>
-                </div>
-                <div class="p-6 flex flex-col flex-grow -mt-10 relative z-10">
-                  <h3
-                    class="text-xl font-bold font-[family-name:var(--font-tech)] text-white uppercase leading-snug mb-6"
-                  >
-                    <span data-file="/screens/new_screen1.jsx" data-idx="22"
-                      >LỄ RA MẮT HỆ SINH THÁI SỐ TOÀN DIỆN</span
+                      "
+                    </div>
+                    <p
+                      class="text-xl md:text-2xl font-bold text-white leading-relaxed mb-8 italic z-10"
                     >
-                  </h3>
-                  <div class="mt-auto">
-                    <a href="./project-detail.html"
-                      class="text-project-link font-medium text-sm flex items-center gap-1 hover:text-white transition-colors"
-                      data-media-type="banani-button"
-                      ><span
-                        data-file="/components/ProjectEventCard.jsx"
-                        data-idx="0"
-                        >View Details</span
+                      "<span data-file="/screens/new_screen2.jsx" data-idx="26"
+                        >Biến những ý tưởng điên rồ và táo bạo nhất thành hiện
+                        thực hữu hình trên sân khấu. Sáng tạo không bao giờ có
+                        giới hạn.</span
+                      >"
+                    </p>
+                    <div class="z-10">
+                      <div class="text-white font-bold text-lg mb-1">
+                        <span data-file="/screens/new_screen2.jsx" data-idx="24"
+                          >Kevin Lê</span
+                        >
+                      </div>
+                      <div
+                        class="text-upbeat-primary text-xs uppercase tracking-widest font-bold"
                       >
-                      <iconify-icon
-                        icon="lucide:arrow-right"
-                        class="block size-[14px]"
-                        style="font-size: 14px"
-                      ></iconify-icon
-                    ></a>
+                        <span data-file="/screens/new_screen2.jsx" data-idx="25"
+                          >Giám đốc sáng tạo</span
+                        >
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
+          </section>
+          <section class="py-24 px-6 border-t border-white/5">
+            <div class="max-w-7xl mx-auto">
+              <div class="text-center mb-16">
+                <div
+                  class="text-upbeat-primary text-xs font-bold uppercase tracking-widest mb-4"
+                >
+                  <span data-file="/screens/new_screen2.jsx" data-idx="27"
+                    >Cuộc sống tại Upbeat</span
+                  >
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                  <span data-file="/screens/new_screen2.jsx" data-idx="28"
+                    >Văn Hóa &amp; Con Người</span
+                  >
+                </h2>
+                <p class="text-white/60 max-w-2xl mx-auto text-lg">
+                  <span data-file="/screens/new_screen2.jsx" data-idx="29"
+                    >Hơn cả một nơi làm việc, chúng tôi là một gia đình lớn, nơi
+                    mỗi cá nhân được tự do thể hiện cá tính và cùng nhau tạo nên
+                    những kỷ niệm khó quên.</span
+                  >
+                </p>
+              </div>
+              <div class="flex flex-col md:flex-row gap-4 md:gap-6">
+                <div class="flex flex-col gap-4 md:gap-6 w-full md:w-5/12">
+                  <div
+                    class="w-full rounded-[2rem] overflow-hidden border border-white/10 shadow-xl relative group h-[300px] md:h-[350px]"
+                  >
+                    <img
+                      data-query="large creative team group photo, dark background, everyone smiling"
+                      data-aspect-ratio="16:9"
+                      style="aspect-ratio: 16/9"
+                      src="https://images.pexels.com/photos/21044848/pexels-photo-21044848/free-photo-of-den-va-tr-ng-dan-ong-dan-ba-ng-i.jpeg?auto=compress&cs=tinysrgb&w=150 150w, https://images.pexels.com/photos/21044848/pexels-photo-21044848/free-photo-of-den-va-tr-ng-dan-ong-dan-ba-ng-i.jpeg?auto=compress&cs=tinysrgb&w=300 300w, https://images.pexels.com/photos/21044848/pexels-photo-21044848/free-photo-of-den-va-tr-ng-dan-ong-dan-ba-ng-i.jpeg?auto=compress&cs=tinysrgb&w=400 400w, https://images.pexels.com/photos/21044848/pexels-photo-21044848/free-photo-of-den-va-tr-ng-dan-ong-dan-ba-ng-i.jpeg?auto=compress&cs=tinysrgb&w=600 600w, https://images.pexels.com/photos/21044848/pexels-photo-21044848/free-photo-of-den-va-tr-ng-dan-ong-dan-ba-ng-i.jpeg?auto=compress&cs=tinysrgb&w=800 800w, https://images.pexels.com/photos/21044848/pexels-photo-21044848/free-photo-of-den-va-tr-ng-dan-ong-dan-ba-ng-i.jpeg?auto=compress&cs=tinysrgb&w=1200 1200w, https://images.pexels.com/photos/21044848/pexels-photo-21044848/free-photo-of-den-va-tr-ng-dan-ong-dan-ba-ng-i.jpeg?auto=compress&cs=tinysrgb&w=1600 1600w"
+                      class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                    />
+                  </div>
+                  <div
+                    class="w-full rounded-[2rem] overflow-hidden border border-white/10 shadow-xl relative group h-[300px] md:h-[400px]"
+                  >
+                    <img
+                      data-query="people celebrating holi festival with colorful powder, happy faces"
+                      data-aspect-ratio="1:1"
+                      style="aspect-ratio: 1/1"
+                      src="https://media.istockphoto.com/id/499517325/vi/anh/m%E1%BB%99t-ng%C6%B0%E1%BB%9Di-%C4%91%C3%A0n-%C3%B4ng-ph%C3%A1t-bi%E1%BB%83u-t%E1%BA%A1i-m%E1%BB%99t-h%E1%BB%99i-ngh%E1%BB%8B-kinh-doanh.jpg?b=1&s=612x612&w=0&k=20&c=FuxQEJmAZ-MWGkk4RQ8cGSYZ7H136j2_sEyUMF9sWUs="
+                      class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                    />
+                  </div>
+                </div>
+                <div class="flex flex-col gap-4 md:gap-6 w-full md:w-4/12">
+                  <div
+                    class="w-full rounded-[2rem] overflow-hidden border border-white/10 shadow-xl relative group h-[350px] md:h-[450px]"
+                  >
+                    <img
+                      data-query="person playing paintball outdoors, action shot, dynamic"
+                      data-aspect-ratio="3:4"
+                      style="aspect-ratio: 3/4"
+                      src="https://images.pexels.com/photos/977233/pexels-photo-977233.jpeg?auto=compress&cs=tinysrgb&w=150 150w, https://images.pexels.com/photos/977233/pexels-photo-977233.jpeg?auto=compress&cs=tinysrgb&w=300 300w, https://images.pexels.com/photos/977233/pexels-photo-977233.jpeg?auto=compress&cs=tinysrgb&w=400 400w, https://images.pexels.com/photos/977233/pexels-photo-977233.jpeg?auto=compress&cs=tinysrgb&w=600 600w, https://images.pexels.com/photos/977233/pexels-photo-977233.jpeg?auto=compress&cs=tinysrgb&w=800 800w, https://images.pexels.com/photos/977233/pexels-photo-977233.jpeg?auto=compress&cs=tinysrgb&w=1200 1200w, https://images.pexels.com/photos/977233/pexels-photo-977233.jpeg?auto=compress&cs=tinysrgb&w=1600 1600w"
+                      class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                    />
+                  </div>
+                  <div
+                    class="w-full rounded-[2rem] overflow-hidden border border-white/10 shadow-xl relative group h-[250px] md:h-[300px]"
+                  >
+                    <img
+                      data-query="team casual meeting around a high table in a bright modern office"
+                      data-aspect-ratio="16:9"
+                      style="aspect-ratio: 16/9"
+                      src="https://images.pexels.com/photos/34630062/pexels-photo-34630062/free-photo-of-quay-phim-s-ki-n-l-t-t-nghi-p.jpeg?auto=compress&cs=tinysrgb&w=150 150w, https://images.pexels.com/photos/34630062/pexels-photo-34630062/free-photo-of-quay-phim-s-ki-n-l-t-t-nghi-p.jpeg?auto=compress&cs=tinysrgb&w=300 300w, https://images.pexels.com/photos/34630062/pexels-photo-34630062/free-photo-of-quay-phim-s-ki-n-l-t-t-nghi-p.jpeg?auto=compress&cs=tinysrgb&w=400 400w, https://images.pexels.com/photos/34630062/pexels-photo-34630062/free-photo-of-quay-phim-s-ki-n-l-t-t-nghi-p.jpeg?auto=compress&cs=tinysrgb&w=600 600w, https://images.pexels.com/photos/34630062/pexels-photo-34630062/free-photo-of-quay-phim-s-ki-n-l-t-t-nghi-p.jpeg?auto=compress&cs=tinysrgb&w=800 800w, https://images.pexels.com/photos/34630062/pexels-photo-34630062/free-photo-of-quay-phim-s-ki-n-l-t-t-nghi-p.jpeg?auto=compress&cs=tinysrgb&w=1200 1200w, https://images.pexels.com/photos/34630062/pexels-photo-34630062/free-photo-of-quay-phim-s-ki-n-l-t-t-nghi-p.jpeg?auto=compress&cs=tinysrgb&w=1600 1600w"
+                      class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                    />
+                  </div>
+                </div>
+                <div class="flex flex-col gap-4 md:gap-6 w-full md:w-3/12">
+                  <div
+                    class="w-full rounded-[2rem] overflow-hidden border border-white/10 shadow-xl relative group h-[200px] md:h-[200px]"
+                  >
+                    <img
+                      data-query="colleagues chatting and eating together in a modern office pantry"
+                      data-aspect-ratio="16:9"
+                      style="aspect-ratio: 16/9"
+                      src="https://images.pexels.com/photos/33815168/pexels-photo-33815168.jpeg?auto=compress&cs=tinysrgb&w=150 150w, https://images.pexels.com/photos/33815168/pexels-photo-33815168.jpeg?auto=compress&cs=tinysrgb&w=300 300w, https://images.pexels.com/photos/33815168/pexels-photo-33815168.jpeg?auto=compress&cs=tinysrgb&w=400 400w, https://images.pexels.com/photos/33815168/pexels-photo-33815168.jpeg?auto=compress&cs=tinysrgb&w=600 600w, https://images.pexels.com/photos/33815168/pexels-photo-33815168.jpeg?auto=compress&cs=tinysrgb&w=800 800w, https://images.pexels.com/photos/33815168/pexels-photo-33815168.jpeg?auto=compress&cs=tinysrgb&w=1200 1200w, https://images.pexels.com/photos/33815168/pexels-photo-33815168.jpeg?auto=compress&cs=tinysrgb&w=1600 1600w"
+                      class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                    />
+                  </div>
+                  <div
+                    class="w-full rounded-[2rem] overflow-hidden border border-white/10 shadow-xl relative group h-[400px] md:h-[550px]"
+                  >
+                    <img
+                      data-query="team building workshop, people making crafts around a long table"
+                      data-aspect-ratio="9:16"
+                      style="aspect-ratio: 9/16"
+                      src="https://images.pexels.com/photos/6405808/pexels-photo-6405808.jpeg?auto=compress&cs=tinysrgb&w=150 150w, https://images.pexels.com/photos/6405808/pexels-photo-6405808.jpeg?auto=compress&cs=tinysrgb&w=300 300w, https://images.pexels.com/photos/6405808/pexels-photo-6405808.jpeg?auto=compress&cs=tinysrgb&w=400 400w, https://images.pexels.com/photos/6405808/pexels-photo-6405808.jpeg?auto=compress&cs=tinysrgb&w=600 600w, https://images.pexels.com/photos/6405808/pexels-photo-6405808.jpeg?auto=compress&cs=tinysrgb&w=800 800w, https://images.pexels.com/photos/6405808/pexels-photo-6405808.jpeg?auto=compress&cs=tinysrgb&w=1200 1200w, https://images.pexels.com/photos/6405808/pexels-photo-6405808.jpeg?auto=compress&cs=tinysrgb&w=1600 1600w"
+                      class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
         <footer
-          class="bg-black border-t border-event-border mt-12 text-event-muted hover:text-white transition-colors py-12 px-6 mt-16"
+          class="bg-[#050505] border-t border-white/5 text-white/50 hover:text-white py-12 px-6 mt-16"
         >
           <div
             class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4"
           >
-            <div class="text-xl font-bold font-[family-name:var(--font-tech)]">
+            <div
+              class="text-xl font-bold font-[family-name:var(--font-editorial)]"
+            >
               <span data-file="/components/Footer.jsx" data-idx="0"
-                >MyBlog</span
+                >Upbeat</span
               >
             </div>
             <div class="flex gap-6 text-sm">
@@ -2627,7 +2618,7 @@
             </div>
             <div class="text-xs">
               <span data-file="/components/Footer.jsx" data-idx="4"
-                >© 2023 MyBlog. All rights reserved.</span
+                >© 2023 Upbeat. All rights reserved.</span
               >
             </div>
           </div>

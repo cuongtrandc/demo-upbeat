@@ -8,9 +8,12 @@
     background-color: var(--background);
   "
 >
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;200;300;400;500;600;700;800;900&family=Geist:wght@100;200;300;400;500;600;700;800;900&family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700;800;900&family=PT+Serif:wght@400;700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Shantell+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
   <html>
     <head>
       <style>
@@ -56,6 +59,7 @@
             --font-weight-bold: 700;
             --tracking-normal: 0em;
             --tracking-wider: 0.05em;
+            --tracking-widest: 0.1em;
             --leading-tight: 1.25;
             --leading-relaxed: 1.625;
             --leading-loose: 2;
@@ -101,7 +105,16 @@
             line-height: 1.5;
             -webkit-text-size-adjust: 100%;
             tab-size: 4;
-            font-family: "Inter", Arial, sans-serif;
+            font-family: var(
+              --default-font-family,
+              ui-sans-serif,
+              system-ui,
+              sans-serif,
+              "Apple Color Emoji",
+              "Segoe UI Emoji",
+              "Segoe UI Symbol",
+              "Noto Color Emoji"
+            );
             font-feature-settings: var(--default-font-feature-settings, normal);
             font-variation-settings: var(
               --default-font-variation-settings,
@@ -140,7 +153,17 @@
           kbd,
           samp,
           pre {
-            font-family: "Inter", Arial, sans-serif;
+            font-family: var(
+              --default-mono-font-family,
+              ui-monospace,
+              SFMono-Regular,
+              Menlo,
+              Monaco,
+              Consolas,
+              "Liberation Mono",
+              "Courier New",
+              monospace
+            );
             font-feature-settings: var(
               --default-mono-font-feature-settings,
               normal
@@ -354,6 +377,9 @@
           .z-30 {
             z-index: 30;
           }
+          .z-50 {
+            z-index: 50;
+          }
           .col-span-12 {
             grid-column: span 12 / span 12;
           }
@@ -362,6 +388,9 @@
           }
           .-mt-10 {
             margin-top: calc(var(--spacing) * -10);
+          }
+          .mt-1 {
+            margin-top: calc(var(--spacing) * 1);
           }
           .mt-2 {
             margin-top: calc(var(--spacing) * 2);
@@ -631,6 +660,9 @@
           .gap-8 {
             gap: calc(var(--spacing) * 8);
           }
+          .gap-10 {
+            gap: calc(var(--spacing) * 10);
+          }
           .gap-12 {
             gap: calc(var(--spacing) * 12);
           }
@@ -758,6 +790,12 @@
           }
           .bg-\[\#0a0a0f\] {
             background-color: #0a0a0f;
+          }
+          .bg-\[\#7E6BFF\] {
+            background-color: #7e6bff;
+          }
+          .bg-\[\#12121a\] {
+            background-color: #12121a;
           }
           .bg-background {
             background-color: var(--color-background);
@@ -1037,6 +1075,9 @@
           .px-6 {
             padding-inline: calc(var(--spacing) * 6);
           }
+          .px-7 {
+            padding-inline: calc(var(--spacing) * 7);
+          }
           .px-8 {
             padding-inline: calc(var(--spacing) * 8);
           }
@@ -1064,6 +1105,9 @@
           .py-4 {
             padding-block: calc(var(--spacing) * 4);
           }
+          .py-5 {
+            padding-block: calc(var(--spacing) * 5);
+          }
           .py-16 {
             padding-block: calc(var(--spacing) * 16);
           }
@@ -1079,8 +1123,8 @@
           .pt-20 {
             padding-top: calc(var(--spacing) * 20);
           }
-          .pt-24 {
-            padding-top: calc(var(--spacing) * 24);
+          .pt-32 {
+            padding-top: calc(var(--spacing) * 32);
           }
           .pt-40 {
             padding-top: calc(var(--spacing) * 40);
@@ -1113,10 +1157,10 @@
             text-align: center;
           }
           .font-body {
-            font-family: "Inter", Arial, sans-serif;
+            font-family: var(--font-body);
           }
           .font-headings {
-            font-family: "Inter", Arial, sans-serif;
+            font-family: var(--font-headings);
           }
           .text-2xl {
             font-size: var(--text-2xl);
@@ -1150,6 +1194,9 @@
             font-size: var(--text-xs);
             line-height: var(--tw-leading, var(--text-xs--line-height));
           }
+          .text-\[8px\] {
+            font-size: 8px;
+          }
           .text-\[11px\] {
             font-size: 11px;
           }
@@ -1174,6 +1221,10 @@
             --tw-leading: var(--leading-loose);
             line-height: var(--leading-loose);
           }
+          .leading-none {
+            --tw-leading: 1;
+            line-height: 1;
+          }
           .leading-relaxed {
             --tw-leading: var(--leading-relaxed);
             line-height: var(--leading-relaxed);
@@ -1194,6 +1245,10 @@
             --tw-tracking: 0.2em;
             letter-spacing: 0.2em;
           }
+          .tracking-\[0\.4em\] {
+            --tw-tracking: 0.4em;
+            letter-spacing: 0.4em;
+          }
           .tracking-normal {
             --tw-tracking: var(--tracking-normal);
             letter-spacing: var(--tracking-normal);
@@ -1202,8 +1257,15 @@
             --tw-tracking: var(--tracking-wider);
             letter-spacing: var(--tracking-wider);
           }
+          .tracking-widest {
+            --tw-tracking: var(--tracking-widest);
+            letter-spacing: var(--tracking-widest);
+          }
           .whitespace-nowrap {
             white-space: nowrap;
+          }
+          .text-\[\#d6c4b3\] {
+            color: #d6c4b3;
           }
           .text-foreground {
             color: var(--color-foreground);
@@ -1288,6 +1350,14 @@
           .shadow-\[0_0_15px_rgba\(124\,58\,237\,0\.4\)\] {
             --tw-shadow: 0 0 15px
               var(--tw-shadow-color, rgba(124, 58, 237, 0.4));
+            box-shadow:
+              var(--tw-inset-shadow), var(--tw-inset-ring-shadow),
+              var(--tw-ring-offset-shadow), var(--tw-ring-shadow),
+              var(--tw-shadow);
+          }
+          .shadow-\[0_0_15px_rgba\(126\,107\,255\,0\.2\)\] {
+            --tw-shadow: 0 0 15px
+              var(--tw-shadow-color, rgba(126, 107, 255, 0.2));
             box-shadow:
               var(--tw-inset-shadow), var(--tw-inset-ring-shadow),
               var(--tw-ring-offset-shadow), var(--tw-ring-shadow),
@@ -1425,6 +1495,13 @@
               }
             }
           }
+          .hover\:bg-\[\#6857FF\] {
+            &:hover {
+              @media (hover: hover) {
+                background-color: #6857ff;
+              }
+            }
+          }
           .hover\:bg-muted\/50 {
             &:hover {
               @media (hover: hover) {
@@ -1457,6 +1534,13 @@
             &:hover {
               @media (hover: hover) {
                 color: var(--color-foreground);
+              }
+            }
+          }
+          .hover\:text-white {
+            &:hover {
+              @media (hover: hover) {
+                color: var(--color-white);
               }
             }
           }
@@ -1494,6 +1578,11 @@
           .md\:row-span-2 {
             @media (width >= 48rem) {
               grid-row: span 2 / span 2;
+            }
+          }
+          .md\:flex {
+            @media (width >= 48rem) {
+              display: flex;
             }
           }
           .md\:h-\[450px\] {
@@ -1995,15 +2084,6 @@
             }
           }
         }
-        .items-center {
-            overflow: hidden;
-        }
-        .absolute.bottom-0 {
-            border-top-left-radius: 25px;
-            border-top-right-radius: 25px;
-            backdrop-filter: blur(4px);
-            background: linear-gradient(to top, rgb(0 0 0 / 39%), rgb(0 0 0 / 0%));
-        }
       </style>
       <link
         rel="preload"
@@ -2038,10 +2118,58 @@
     </head>
     <body>
       <div
-        class="min-h-screen bg-background text-foreground font-body w-full flex flex-col items-center"
+        class="min-h-screen bg-background text-foreground font-body w-full flex flex-col items-center relative"
       >
+        <div class="w-full absolute top-0 left-0 z-50">
+          <header
+            class="w-full flex items-center justify-between px-8 py-5 z-50 relative"
+          >
+            <a href="./index.html" class="flex flex-col items-center shrink-0">
+              <img src="./log_upbeat_v1.png" style="width: 150px;" alt="">
+            </a>
+            <nav
+              class="hidden md:flex items-center gap-10 bg-[#12121a] border border-border/50 px-8 py-3 rounded-full"
+            >
+              <a href="./about.html"
+                class="text-sm font-medium text-white/80 hover:text-white transition-colors"
+                data-media-type="banani-button"
+                ><span data-file="/components/Header.jsx" data-idx="2"
+                  >Về Upbeat</span
+                ></a
+              ><a href="./project.html"
+                class="text-sm font-medium text-white/80 hover:text-white transition-colors"
+                data-media-type="banani-button"
+                ><span data-file="/components/Header.jsx" data-idx="3"
+                  >Dự án</span
+                ></a
+              ><a href="./service.html"
+                class="text-sm font-medium text-white/80 hover:text-white transition-colors"
+                data-media-type="banani-button"
+                ><span data-file="/components/Header.jsx" data-idx="4"
+                  >Dịch vụ</span
+                ></a
+              ><a href="./blog.html"
+                class="text-sm font-medium text-white/80 hover:text-white transition-colors"
+                data-media-type="banani-button"
+                ><span data-file="/components/Header.jsx" data-idx="5"
+                  >Blog</span
+                ></a
+              >
+            </nav>
+             <a href="./index.html#contact-with">
+              <button
+                class="bg-upbeat-primary text-upbeat-primary-foreground px-8 py-3 rounded-full text-sm font-bold hover:bg-upbeat-primary/90 transition-colors shadow-[0_0_20px_rgba(112,93,242,0.3)]"
+                data-media-type="banani-button"
+              >
+                <span data-file="/components/UpbeatHeader.jsx" data-idx="6"
+                  >Liên hệ</span
+                >
+              </button>
+            </a>
+          </header>
+        </div>
         <div
-          class="w-full max-w-[1200px] px-8 pt-24 pb-12 flex flex-col gap-12"
+          class="w-full max-w-[1200px] px-8 pt-32 pb-12 flex flex-col gap-12 relative z-10"
         >
           <div class="flex flex-col gap-4">
             <div
@@ -2060,7 +2188,8 @@
             </h1>
             <p class="text-muted-foreground text-lg">
               <span style="font-size: 14px;" data-file="/screens/new_screen2.jsx" data-idx="2"
-                >Khám phá những góc nhìn mới về thương hiệu, truyền thông và sự kiện. Chúng tôi chia sẻ những xu hướng, câu chuyện và chiến lược đang định hình nên ngành công nghiệp này.</span
+                >Khám phá những góc nhìn mới về thương hiệu, truyền thông và sự kiện. Chúng tôi 
+                chia sẻ những xu hướng, câu chuyện và chiến lược đang định hình nên ngành công nghiệp này.</span
               >
             </p>
           </div>
@@ -2086,9 +2215,8 @@
                 style="font-size: 24px"
               ></iconify-icon>
             </div>
-            <a
+            <a href="./blog-detail.html"
               class="absolute bottom-0 left-0 right-0 p-8 md:p-12 flex flex-col gap-6"
-              href="./blog-detail.html"
             >
               <div class="flex flex-col gap-3 max-w-3xl">
                 <h2
@@ -2163,7 +2291,7 @@
             class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 py-4 border-b border-border/40 mt-8"
           >
             <div
-              class="flex items-center gap-6 overflow-x-auto w-full md:w-auto pb-2 md:pb-0"
+              class="flex items-center gap-6 overflow-x-auto w-full md:w-auto pb-2 md:pb-0" style="overflow: hidden;"
             >
               <div
                 class="text-sm font-medium text-muted-foreground whitespace-nowrap"
@@ -2246,7 +2374,7 @@
                       ></span
                     >
                   </div>
-                  <div class="flex flex-col gap-5">
+                  <a class="flex flex-col gap-5" href="./blog-detail.html">
                     <h3
                       class="text-3xl md:text-4xl font-headings font-bold text-foreground leading-[1.15] transition-colors group-hover:text-primary"
                     >
@@ -2262,10 +2390,10 @@
                          “Vinh quang của lực lượng công an nhân dân Việt Nam” chỉ ra một hướng đi khác: một nơi mà chính sách, công chúng...</span
                       >
                     </p>
-                  </div>
+                  </a>
                 </div>
                 <div class="mt-10">
-                  <a
+                  <a href="./blog-detail.html"
                     class="text-sm text-muted-foreground hover:text-foreground transition-colors font-medium border-b border-transparent hover:border-foreground pb-1"
                     data-media-type="banani-button"
                     ><span data-file="/components/BlogListRow.jsx" data-idx="0"
@@ -2308,7 +2436,7 @@
                       ></span
                     >
                   </div>
-                  <div class="flex flex-col gap-5">
+                  <a class="flex flex-col gap-5" href="./blog-detail.html">
                     <h3
                       class="text-3xl md:text-4xl font-headings font-bold text-foreground leading-[1.15] transition-colors group-hover:text-primary"
                     >
@@ -2327,10 +2455,10 @@
                         ứng dụng phức tạp.</span
                       >
                     </p>
-                  </div>
+                  </a>
                 </div>
                 <div class="mt-10">
-                  <a
+                  <a href="./blog-detail.html"
                     class="text-sm text-muted-foreground hover:text-foreground transition-colors font-medium border-b border-transparent hover:border-foreground pb-1"
                     data-media-type="banani-button"
                     ><span data-file="/components/BlogListRow.jsx" data-idx="0"
@@ -2373,7 +2501,7 @@
                       ></span
                     >
                   </div>
-                  <div class="flex flex-col gap-5">
+                  <a class="flex flex-col gap-5" href="./blog-detail.html">
                     <h3
                       class="text-3xl md:text-4xl font-headings font-bold text-foreground leading-[1.15] transition-colors group-hover:text-primary"
                     >
@@ -2390,10 +2518,10 @@
                         đến sự hồi sinh của Y2K.</span
                       >
                     </p>
-                  </div>
+                  </a>
                 </div>
                 <div class="mt-10">
-                  <a
+                  <a href="./blog-detail.html"
                     class="text-sm text-muted-foreground hover:text-foreground transition-colors font-medium border-b border-transparent hover:border-foreground pb-1"
                     data-media-type="banani-button"
                     ><span data-file="/components/BlogListRow.jsx" data-idx="0"
@@ -2436,7 +2564,7 @@
                       ></span
                     >
                   </div>
-                  <div class="flex flex-col gap-5">
+                  <a class="flex flex-col gap-5" href="./blog-detail.html">
                     <h3
                       class="text-3xl md:text-4xl font-headings font-bold text-foreground leading-[1.15] transition-colors group-hover:text-primary"
                     >
@@ -2454,10 +2582,10 @@
                         tảng.</span
                       >
                     </p>
-                  </div>
+                  </a>
                 </div>
                 <div class="mt-10">
-                  <a
+                  <a href="./blog-detail.html"
                     class="text-sm text-muted-foreground hover:text-foreground transition-colors font-medium border-b border-transparent hover:border-foreground pb-1"
                     data-media-type="banani-button"
                     ><span data-file="/components/BlogListRow.jsx" data-idx="0"
@@ -2492,7 +2620,7 @@
         </div>
         <div class="w-full mt-12">
           <footer
-            class="w-full bg-[#0a0a0f] pt-20 pb-16 px-8 flex flex-col items-center border-t border-border/20 relative overflow-hidden"
+            class="w-full bg-[#0a0a0f] pt-20 pb-8 px-8 flex flex-col items-center border-t border-border/20 relative overflow-hidden"
           >
             <div
               class="absolute inset-0 pointer-events-none opacity-[0.03]"
@@ -2629,7 +2757,7 @@
                 <h1
                   class="text-[22vw] sm:text-[16rem] lg:text-[19rem] leading-[0.8] text-center tracking-normal relative z-10"
                   style="
-                    font-family: 'Inter', Arial, sans-serif;
+                    font-family: &quot;Times New Roman&quot;, Times, serif;
                     font-weight: 600;
                     background: linear-gradient(90deg, #7e6bff, #6857ff);
                     -webkit-background-clip: text;
@@ -2647,7 +2775,7 @@
                   <span
                     class="font-bold text-sm tracking-[0.2em] text-foreground uppercase"
                     ><span data-file="/components/Footer.jsx" data-idx="16"
-                      >ZEIT EVENTS</span
+                      >Upbeat EVENTS</span
                     ></span
                   ><span class="font-bold text-[15px] text-foreground"
                     ><span data-file="/components/Footer.jsx" data-idx="17"
@@ -2659,7 +2787,7 @@
                   class="text-[13px] text-muted-foreground/70 max-w-3xl leading-loose mt-2 px-4"
                 >
                   <span data-file="/components/Footer.jsx" data-idx="18"
-                    >Zeit không chỉ là một đơn vị tổ chức sự kiện — chúng tôi là
+                    >Upbeat không chỉ là một đơn vị tổ chức sự kiện — chúng tôi là
                     đối tác chiến lược của bạn. Từ phân tích dữ liệu thực tế đến
                     các chiến dịch truyền thông toàn cầu, chúng tôi kết nối con
                     người, công nghệ và cảm xúc để giữ cho thương hiệu của bạn
