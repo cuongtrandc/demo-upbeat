@@ -1,7 +1,9 @@
 <div
   class="export-wrapper"
   style="
-    width: 1440px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
     min-height: 812px;
     position: relative;
     font-family: var(--font-family-body);
@@ -124,6 +126,8 @@
           }
           html,
           :root {
+            width: 100%;
+            max-width: 100%;
             line-height: 1.5;
             -webkit-text-size-adjust: 100%;
             tab-size: 4;
@@ -134,6 +138,10 @@
               normal
             );
             -webkit-tap-highlight-color: transparent;
+          }
+          body {
+            width: 100%;
+            max-width: 100%;
           }
           hr {
             height: 0;
