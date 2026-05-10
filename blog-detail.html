@@ -1,0 +1,1619 @@
+<div
+  class="export-wrapper"
+  style="
+    width: 1440px;
+    min-height: 812px;
+    position: relative;
+    /*   font-family: "Inter", Arial, sans-serif;
+ var(--background);
+  "
+>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <!-- <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;200;300;400;500;600;700;800;900&family=Geist:wght@100;200;300;400;500;600;700;800;900&family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700;800;900&family=PT+Serif:wght@400;700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Shantell+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  /> -->
+  <html>
+    <head>
+      <style>
+        /* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
+        /*! tailwindcss v4.2.4 | MIT License | https://tailwindcss.com */
+        @layer properties;
+        @layer theme, base, components, utilities;
+        @layer theme {
+          :root,
+          :root {
+            --font-sans:
+              ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+              "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            --font-serif:
+              ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+            --font-mono:
+              ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+              "Liberation Mono", "Courier New", monospace;
+            --color-white: #fff;
+            --spacing: 0.25rem;
+            --container-3xl: 48rem;
+            --container-4xl: 56rem;
+            --container-5xl: 64rem;
+            --container-6xl: 72rem;
+            --text-xs: 12px;
+            --text-xs--line-height: calc(1 / 0.75);
+            --text-sm: 14px;
+            --text-sm--line-height: calc(1.25 / 0.875);
+            --text-base: 16px;
+            --text-base--line-height: calc(1.5 / 1);
+            --text-lg: 18px;
+            --text-lg--line-height: calc(1.75 / 1.125);
+            --text-xl: 20px;
+            --text-xl--line-height: calc(1.75 / 1.25);
+            --text-2xl: 24px;
+            --text-2xl--line-height: calc(2 / 1.5);
+            --text-3xl: 30px;
+            --text-3xl--line-height: calc(2.25 / 1.875);
+            --text-4xl: 36px;
+            --text-4xl--line-height: calc(2.5 / 2.25);
+            --text-5xl: 3rem;
+            --text-5xl--line-height: 1;
+            --text-6xl: 3.75rem;
+            --text-6xl--line-height: 1;
+            --font-weight-medium: 500;
+            --font-weight-semibold: 600;
+            --font-weight-bold: 700;
+            --font-weight-extrabold: 800;
+            --font-weight-black: 900;
+            --tracking-tight: -0.025em;
+            --tracking-wide: 0.025em;
+            --tracking-wider: 0.05em;
+            --tracking-widest: 0.1em;
+            --leading-tight: 1.25;
+            --leading-snug: 1.375;
+            --leading-relaxed: 1.625;
+            --leading-loose: 2;
+            --radius-sm: 4px;
+            --radius-lg: 12px;
+            --radius-xl: 24px;
+            --radius-2xl: 1rem;
+            --blur-sm: 8px;
+            --default-transition-duration: 150ms;
+            --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            --default-font: "Inter", Arial, sans-serif;
+            --default-mono-font: "Inter", Arial, sans-serif;
+            --radius: var(--radius-sm);
+            --color-background: #ffffff;
+            --color-foreground: #000000;
+            --color-border: #e8e8e8;
+            --color-muted: #e8e8e8;
+            --color-muted-foreground: #949494;
+            --color-event-bg-end: #000000;
+            --color-event-card: rgba(255, 255, 255, 0.05);
+            --color-event-border: rgba(255, 255, 255, 0.1);
+            --color-event-text: #ffffff;
+            --font-body: Inter;
+            --font-editorial: "PT Serif";
+            --font-tech: "Space Grotesk";
+          }
+        }
+        @layer base {
+          *,
+          ::after,
+          ::before,
+          ::backdrop,
+          ::file-selector-button {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            border: 0 solid;
+          }
+          html,
+          :root {
+            line-height: 1.5;
+            -webkit-text-size-adjust: 100%;
+            tab-size: 4;
+                font-family: "Inter", Arial, sans-serif;
+
+
+            font-feature-settings: var(--default-font-feature-settings, normal);
+            font-variation-settings: var(
+              --default-font-variation-settings,
+              normal
+            );
+            -webkit-tap-highlight-color: transparent;
+          }
+          hr {
+            height: 0;
+            color: inherit;
+            border-top-width: 1px;
+          }
+          abbr:where([title]) {
+            -webkit-text-decoration: underline dotted;
+            text-decoration: underline dotted;
+          }
+          h1,
+          h2,
+          h3,
+          h4,
+          h5,
+          h6 {
+            font-size: inherit;
+            font-weight: inherit;
+          }
+          a {
+            color: inherit;
+            -webkit-text-decoration: inherit;
+            text-decoration: inherit;
+          }
+          b,
+          strong {
+            font-weight: bolder;
+          }
+          code,
+          kbd,
+          samp,
+          pre {
+                font-family: "Inter", Arial, sans-serif;
+
+
+            font-feature-settings: var(
+              --default-mono-font-feature-settings,
+              normal
+            );
+            font-variation-settings: var(
+              --default-mono-font-variation-settings,
+              normal
+            );
+            font-size: 1em;
+          }
+          small {
+            font-size: 80%;
+          }
+          sub,
+          sup {
+            font-size: 75%;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline;
+          }
+          sub {
+            bottom: -0.25em;
+          }
+          sup {
+            top: -0.5em;
+          }
+          table {
+            text-indent: 0;
+            border-color: inherit;
+            border-collapse: collapse;
+          }
+          :-moz-focusring {
+            outline: auto;
+          }
+          progress {
+            vertical-align: baseline;
+          }
+          summary {
+            display: list-item;
+          }
+          ol,
+          ul,
+          menu {
+            list-style: none;
+          }
+          img,
+          svg,
+          video,
+          canvas,
+          audio,
+          iframe,
+          embed,
+          object {
+            display: block;
+            vertical-align: middle;
+          }
+          img,
+          video {
+            max-width: 100%;
+            height: auto;
+          }
+          button,
+          input,
+          select,
+          optgroup,
+          textarea,
+          ::file-selector-button {
+            font: inherit;
+            font-feature-settings: inherit;
+            font-variation-settings: inherit;
+            letter-spacing: inherit;
+            color: inherit;
+            border-radius: 0;
+            background-color: transparent;
+            opacity: 1;
+          }
+          :where(select:is([multiple], [size])) optgroup {
+            font-weight: bolder;
+          }
+          :where(select:is([multiple], [size])) optgroup option {
+            padding-inline-start: 20px;
+          }
+          ::file-selector-button {
+            margin-inline-end: 4px;
+          }
+          ::placeholder {
+            opacity: 1;
+          }
+          @supports (not (-webkit-appearance: -apple-pay-button)) or
+            (contain-intrinsic-size: 1px) {
+            ::placeholder {
+              color: currentcolor;
+              @supports (color: color-mix(in lab, red, red)) {
+                color: color-mix(in oklab, currentcolor 50%, transparent);
+              }
+            }
+          }
+          textarea {
+            resize: vertical;
+          }
+          ::-webkit-search-decoration {
+            -webkit-appearance: none;
+          }
+          ::-webkit-date-and-time-value {
+            min-height: 1lh;
+            text-align: inherit;
+          }
+          ::-webkit-datetime-edit {
+            display: inline-flex;
+          }
+          ::-webkit-datetime-edit-fields-wrapper {
+            padding: 0;
+          }
+          ::-webkit-datetime-edit,
+          ::-webkit-datetime-edit-year-field,
+          ::-webkit-datetime-edit-month-field,
+          ::-webkit-datetime-edit-day-field,
+          ::-webkit-datetime-edit-hour-field,
+          ::-webkit-datetime-edit-minute-field,
+          ::-webkit-datetime-edit-second-field,
+          ::-webkit-datetime-edit-millisecond-field,
+          ::-webkit-datetime-edit-meridiem-field {
+            padding-block: 0;
+          }
+          ::-webkit-calendar-picker-indicator {
+            line-height: 1;
+          }
+          :-moz-ui-invalid {
+            box-shadow: none;
+          }
+          button,
+          input:where([type="button"], [type="reset"], [type="submit"]),
+          ::file-selector-button {
+            appearance: button;
+          }
+          ::-webkit-inner-spin-button,
+          ::-webkit-outer-spin-button {
+            height: auto;
+          }
+          [hidden]:where(:not([hidden="until-found"])) {
+            display: none !important;
+          }
+        }
+        @layer utilities {
+          .relative {
+            position: relative;
+          }
+          .mx-auto {
+            margin-inline: auto;
+          }
+          .my-4 {
+            margin-block: calc(var(--spacing) * 4);
+          }
+          .my-6 {
+            margin-block: calc(var(--spacing) * 6);
+          }
+          .my-8 {
+            margin-block: calc(var(--spacing) * 8);
+          }
+          .my-10 {
+            margin-block: calc(var(--spacing) * 10);
+          }
+          .mt-1 {
+            margin-top: calc(var(--spacing) * 1);
+          }
+          .mt-2 {
+            margin-top: calc(var(--spacing) * 2);
+          }
+          .mt-3 {
+            margin-top: calc(var(--spacing) * 3);
+          }
+          .mt-4 {
+            margin-top: calc(var(--spacing) * 4);
+          }
+          .mt-6 {
+            margin-top: calc(var(--spacing) * 6);
+          }
+          .mt-8 {
+            margin-top: calc(var(--spacing) * 8);
+          }
+          .mt-10 {
+            margin-top: calc(var(--spacing) * 10);
+          }
+          .mt-16 {
+            margin-top: calc(var(--spacing) * 16);
+          }
+          .mt-20 {
+            margin-top: calc(var(--spacing) * 20);
+          }
+          .mt-24 {
+            margin-top: calc(var(--spacing) * 24);
+          }
+          .mb-2 {
+            margin-bottom: calc(var(--spacing) * 2);
+          }
+          .mb-4 {
+            margin-bottom: calc(var(--spacing) * 4);
+          }
+          .mb-6 {
+            margin-bottom: calc(var(--spacing) * 6);
+          }
+          .mb-8 {
+            margin-bottom: calc(var(--spacing) * 8);
+          }
+          .mb-10 {
+            margin-bottom: calc(var(--spacing) * 10);
+          }
+          .mb-12 {
+            margin-bottom: calc(var(--spacing) * 12);
+          }
+          .mb-16 {
+            margin-bottom: calc(var(--spacing) * 16);
+          }
+          .line-clamp-2 {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+          }
+          .flex {
+            display: flex;
+          }
+          .grid {
+            display: grid;
+          }
+          .h-8 {
+            height: calc(var(--spacing) * 8);
+          }
+          .h-10 {
+            height: calc(var(--spacing) * 10);
+          }
+          .h-12 {
+            height: calc(var(--spacing) * 12);
+          }
+          .h-px {
+            height: 1px;
+          }
+          .min-h-screen {
+            min-height: 100vh;
+          }
+          .w-8 {
+            width: calc(var(--spacing) * 8);
+          }
+          .w-10 {
+            width: calc(var(--spacing) * 10);
+          }
+          .w-12 {
+            width: calc(var(--spacing) * 12);
+          }
+          .w-full {
+            width: 100%;
+          }
+          .max-w-3xl {
+            max-width: var(--container-3xl);
+          }
+          .max-w-4xl {
+            max-width: var(--container-4xl);
+          }
+          .max-w-5xl {
+            max-width: var(--container-5xl);
+          }
+          .max-w-6xl {
+            max-width: var(--container-6xl);
+          }
+          .shrink-0 {
+            flex-shrink: 0;
+          }
+          .cursor-default {
+            cursor: default;
+          }
+          .grid-cols-1 {
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+          }
+          .flex-col {
+            flex-direction: column;
+          }
+          .items-center {
+            align-items: center;
+          }
+          .items-start {
+            align-items: flex-start;
+          }
+          .justify-between {
+            justify-content: space-between;
+          }
+          .gap-2 {
+            gap: calc(var(--spacing) * 2);
+          }
+          .gap-3 {
+            gap: calc(var(--spacing) * 3);
+          }
+          .gap-4 {
+            gap: calc(var(--spacing) * 4);
+          }
+          .gap-6 {
+            gap: calc(var(--spacing) * 6);
+          }
+          .gap-8 {
+            gap: calc(var(--spacing) * 8);
+          }
+          .gap-10 {
+            gap: calc(var(--spacing) * 10);
+          }
+          .gap-12 {
+            gap: calc(var(--spacing) * 12);
+          }
+          .gap-16 {
+            gap: calc(var(--spacing) * 16);
+          }
+          .overflow-hidden {
+            overflow: hidden;
+          }
+          .rounded {
+            border-radius: var(--radius);
+          }
+          .rounded-2xl {
+            border-radius: var(--radius-2xl);
+          }
+          .rounded-full {
+            border-radius: calc(infinity * 1px);
+          }
+          .rounded-lg {
+            border-radius: var(--radius-lg);
+          }
+          .rounded-xl {
+            border-radius: var(--radius-xl);
+          }
+          .rounded-r-xl {
+            border-top-right-radius: var(--radius-xl);
+            border-bottom-right-radius: var(--radius-xl);
+          }
+          .border {
+            border-style: var(--tw-border-style);
+            border-width: 1px;
+          }
+          .border-2 {
+            border-style: var(--tw-border-style);
+            border-width: 2px;
+          }
+          .border-y {
+            border-block-style: var(--tw-border-style);
+            border-block-width: 1px;
+          }
+          .border-t {
+            border-top-style: var(--tw-border-style);
+            border-top-width: 1px;
+          }
+          .border-t-2 {
+            border-top-style: var(--tw-border-style);
+            border-top-width: 2px;
+          }
+          .border-b {
+            border-bottom-style: var(--tw-border-style);
+            border-bottom-width: 1px;
+          }
+          .border-l-2 {
+            border-left-style: var(--tw-border-style);
+            border-left-width: 2px;
+          }
+          .border-l-4 {
+            border-left-style: var(--tw-border-style);
+            border-left-width: 4px;
+          }
+          .border-none {
+            --tw-border-style: none;
+            border-style: none;
+          }
+          .border-\[\#1a1917\] {
+            border-color: #1a1917;
+          }
+          .border-\[\#e6e2d8\] {
+            border-color: #e6e2d8;
+          }
+          .border-border {
+            border-color: var(--color-border);
+          }
+          .border-event-border {
+            border-color: var(--color-event-border);
+          }
+          .border-event-text {
+            border-color: var(--color-event-text);
+          }
+          .bg-\[\#2c2a25\] {
+            background-color: #2c2a25;
+          }
+          .bg-\[\#fdfaf6\] {
+            background-color: #fdfaf6;
+          }
+          .bg-background {
+            background-color: var(--color-background);
+          }
+          .bg-event-bg-end {
+            background-color: var(--color-event-bg-end);
+          }
+          .bg-event-border {
+            background-color: var(--color-event-border);
+          }
+          .bg-event-card {
+            background-color: var(--color-event-card);
+          }
+          .bg-muted {
+            background-color: var(--color-muted);
+          }
+          .bg-transparent {
+            background-color: transparent;
+          }
+          .bg-white {
+            background-color: var(--color-white);
+          }
+          .object-cover {
+            object-fit: cover;
+          }
+          .p-0 {
+            padding: calc(var(--spacing) * 0);
+          }
+          .p-2 {
+            padding: calc(var(--spacing) * 2);
+          }
+          .p-4 {
+            padding: calc(var(--spacing) * 4);
+          }
+          .p-6 {
+            padding: calc(var(--spacing) * 6);
+          }
+          .p-8 {
+            padding: calc(var(--spacing) * 8);
+          }
+          .p-10 {
+            padding: calc(var(--spacing) * 10);
+          }
+          .px-3 {
+            padding-inline: calc(var(--spacing) * 3);
+          }
+          .px-4 {
+            padding-inline: calc(var(--spacing) * 4);
+          }
+          .px-6 {
+            padding-inline: calc(var(--spacing) * 6);
+          }
+          .px-8 {
+            padding-inline: calc(var(--spacing) * 8);
+          }
+          .py-1 {
+            padding-block: calc(var(--spacing) * 1);
+          }
+          .py-2 {
+            padding-block: calc(var(--spacing) * 2);
+          }
+          .py-6 {
+            padding-block: calc(var(--spacing) * 6);
+          }
+          .py-8 {
+            padding-block: calc(var(--spacing) * 8);
+          }
+          .py-12 {
+            padding-block: calc(var(--spacing) * 12);
+          }
+          .pt-10 {
+            padding-top: calc(var(--spacing) * 10);
+          }
+          .pt-12 {
+            padding-top: calc(var(--spacing) * 12);
+          }
+          .pt-16 {
+            padding-top: calc(var(--spacing) * 16);
+          }
+          .pb-4 {
+            padding-bottom: calc(var(--spacing) * 4);
+          }
+          .pl-4 {
+            padding-left: calc(var(--spacing) * 4);
+          }
+          .pl-6 {
+            padding-left: calc(var(--spacing) * 6);
+          }
+          .text-center {
+            text-align: center;
+          }
+          .text-left {
+            text-align: left;
+          }
+          .font-\[family-name\:var\(--font-editorial\)\] {
+              font-family: "Inter", Arial, sans-serif;
+
+          }
+          .font-\[family-name\:var\(--font-tech\)\] {
+              font-family: "Inter", Arial, sans-serif;
+
+          }
+          .font-body {
+              font-family: "Inter", Arial, sans-serif;
+
+          }
+          .font-serif {
+              font-family: "Inter", Arial, sans-serif;
+
+          }
+          .text-2xl {
+            font-size: var(--text-2xl);
+            line-height: var(--tw-leading, var(--text-2xl--line-height));
+          }
+          .text-3xl {
+            font-size: var(--text-3xl);
+            line-height: var(--tw-leading, var(--text-3xl--line-height));
+          }
+          .text-4xl {
+            font-size: var(--text-4xl);
+            line-height: var(--tw-leading, var(--text-4xl--line-height));
+          }
+          .text-5xl {
+            font-size: var(--text-5xl);
+            line-height: var(--tw-leading, var(--text-5xl--line-height));
+          }
+          .text-base {
+            font-size: var(--text-base);
+            line-height: var(--tw-leading, var(--text-base--line-height));
+          }
+          .text-lg {
+            font-size: var(--text-lg);
+            line-height: var(--tw-leading, var(--text-lg--line-height));
+          }
+          .text-sm {
+            font-size: var(--text-sm);
+            line-height: var(--tw-leading, var(--text-sm--line-height));
+          }
+          .text-xl {
+            font-size: var(--text-xl);
+            line-height: var(--tw-leading, var(--text-xl--line-height));
+          }
+          .text-xs {
+            font-size: var(--text-xs);
+            line-height: var(--tw-leading, var(--text-xs--line-height));
+          }
+          .leading-loose {
+            --tw-leading: var(--leading-loose);
+            line-height: var(--leading-loose);
+          }
+          .leading-relaxed {
+            --tw-leading: var(--leading-relaxed);
+            line-height: var(--leading-relaxed);
+          }
+          .leading-snug {
+            --tw-leading: var(--leading-snug);
+            line-height: var(--leading-snug);
+          }
+          .leading-tight {
+            --tw-leading: var(--leading-tight);
+            line-height: var(--leading-tight);
+          }
+          .font-black {
+            --tw-font-weight: var(--font-weight-black);
+            font-weight: var(--font-weight-black);
+          }
+          .font-bold {
+            --tw-font-weight: var(--font-weight-bold);
+            font-weight: var(--font-weight-bold);
+          }
+          .font-extrabold {
+            --tw-font-weight: var(--font-weight-extrabold);
+            font-weight: var(--font-weight-extrabold);
+          }
+          .font-medium {
+            --tw-font-weight: var(--font-weight-medium);
+            font-weight: var(--font-weight-medium);
+          }
+          .font-semibold {
+            --tw-font-weight: var(--font-weight-semibold);
+            font-weight: var(--font-weight-semibold);
+          }
+          .tracking-tight {
+            --tw-tracking: var(--tracking-tight);
+            letter-spacing: var(--tracking-tight);
+          }
+          .tracking-wide {
+            --tw-tracking: var(--tracking-wide);
+            letter-spacing: var(--tracking-wide);
+          }
+          .tracking-wider {
+            --tw-tracking: var(--tracking-wider);
+            letter-spacing: var(--tracking-wider);
+          }
+          .tracking-widest {
+            --tw-tracking: var(--tracking-widest);
+            letter-spacing: var(--tracking-widest);
+          }
+          .text-\[\#1a1917\] {
+            color: #1a1917;
+          }
+          .text-\[\#2c2a25\] {
+            color: #2c2a25;
+          }
+          .text-\[\#5c5950\] {
+            color: #5c5950;
+          }
+          .text-\[\#8a8578\] {
+            color: #8a8578;
+          }
+          .text-\[\#e6e2d8\] {
+            color: #e6e2d8;
+          }
+          .text-event-text {
+            color: var(--color-event-text);
+          }
+          .text-foreground {
+            color: var(--color-foreground);
+          }
+          .text-muted-foreground {
+            color: var(--color-muted-foreground);
+          }
+          .uppercase {
+            text-transform: uppercase;
+          }
+          .italic {
+            font-style: italic;
+          }
+          .not-italic {
+            font-style: normal;
+          }
+          .opacity-60 {
+            opacity: 60%;
+          }
+          .opacity-70 {
+            opacity: 70%;
+          }
+          .opacity-80 {
+            opacity: 80%;
+          }
+          .opacity-90 {
+            opacity: 90%;
+          }
+          .shadow-2xl {
+            --tw-shadow: 0 25px 50px -12px
+              var(--tw-shadow-color, rgb(0 0 0 / 0.25));
+            box-shadow:
+              var(--tw-inset-shadow), var(--tw-inset-ring-shadow),
+              var(--tw-ring-offset-shadow), var(--tw-ring-shadow),
+              var(--tw-shadow);
+          }
+          .shadow-inner {
+            --tw-shadow: inset 0 2px 4px 0
+              var(--tw-shadow-color, rgb(0 0 0 / 0.05));
+            box-shadow:
+              var(--tw-inset-shadow), var(--tw-inset-ring-shadow),
+              var(--tw-ring-offset-shadow), var(--tw-ring-shadow),
+              var(--tw-shadow);
+          }
+          .shadow-lg {
+            --tw-shadow:
+              0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)),
+              0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+            box-shadow:
+              var(--tw-inset-shadow), var(--tw-inset-ring-shadow),
+              var(--tw-ring-offset-shadow), var(--tw-ring-shadow),
+              var(--tw-shadow);
+          }
+          .shadow-sm {
+            --tw-shadow:
+              0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)),
+              0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+            box-shadow:
+              var(--tw-inset-shadow), var(--tw-inset-ring-shadow),
+              var(--tw-ring-offset-shadow), var(--tw-ring-shadow),
+              var(--tw-shadow);
+          }
+          .grayscale {
+            --tw-grayscale: grayscale(100%);
+            filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,)
+              var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,)
+              var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+          }
+          .backdrop-blur-sm {
+            --tw-backdrop-blur: blur(var(--blur-sm));
+            -webkit-backdrop-filter: var(--tw-backdrop-blur,)
+              var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,)
+              var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,)
+              var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,)
+              var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+            backdrop-filter: var(--tw-backdrop-blur,)
+              var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,)
+              var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,)
+              var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,)
+              var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+          }
+          .transition-all {
+            transition-property: all;
+            transition-timing-function: var(
+              --tw-ease,
+              var(--default-transition-timing-function)
+            );
+            transition-duration: var(
+              --tw-duration,
+              var(--default-transition-duration)
+            );
+          }
+          .transition-opacity {
+            transition-property: opacity;
+            transition-timing-function: var(
+              --tw-ease,
+              var(--default-transition-timing-function)
+            );
+            transition-duration: var(
+              --tw-duration,
+              var(--default-transition-duration)
+            );
+          }
+          .first-letter\:float-left {
+            &::first-letter {
+              float: left;
+            }
+          }
+          .first-letter\:mr-3 {
+            &::first-letter {
+              margin-right: calc(var(--spacing) * 3);
+            }
+          }
+          .first-letter\:text-6xl {
+            &::first-letter {
+              font-size: var(--text-6xl);
+              line-height: var(--tw-leading, var(--text-6xl--line-height));
+            }
+          }
+          .first-letter\:font-bold {
+            &::first-letter {
+              --tw-font-weight: var(--font-weight-bold);
+              font-weight: var(--font-weight-bold);
+            }
+          }
+          .first-letter\:text-\[\#1a1917\] {
+            &::first-letter {
+              color: #1a1917;
+            }
+          }
+          .hover\:opacity-100 {
+            &:hover {
+              @media (hover: hover) {
+                opacity: 100%;
+              }
+            }
+          }
+          .hover\:shadow-2xl {
+            &:hover {
+              @media (hover: hover) {
+                --tw-shadow: 0 25px 50px -12px
+                  var(--tw-shadow-color, rgb(0 0 0 / 0.25));
+                box-shadow:
+                  var(--tw-inset-shadow), var(--tw-inset-ring-shadow),
+                  var(--tw-ring-offset-shadow), var(--tw-ring-shadow),
+                  var(--tw-shadow);
+              }
+            }
+          }
+          .md\:sticky {
+            @media (width >= 48rem) {
+              position: sticky;
+            }
+          }
+          .md\:top-8 {
+            @media (width >= 48rem) {
+              top: calc(var(--spacing) * 8);
+            }
+          }
+          .md\:top-12 {
+            @media (width >= 48rem) {
+              top: calc(var(--spacing) * 12);
+            }
+          }
+          .md\:w-1\/3 {
+            @media (width >= 48rem) {
+              width: calc(1 / 3 * 100%);
+            }
+          }
+          .md\:w-1\/4 {
+            @media (width >= 48rem) {
+              width: calc(1 / 4 * 100%);
+            }
+          }
+          .md\:w-2\/3 {
+            @media (width >= 48rem) {
+              width: calc(2 / 3 * 100%);
+            }
+          }
+          .md\:w-3\/4 {
+            @media (width >= 48rem) {
+              width: calc(3 / 4 * 100%);
+            }
+          }
+          .md\:grid-cols-3 {
+            @media (width >= 48rem) {
+              grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+          }
+          .md\:flex-row {
+            @media (width >= 48rem) {
+              flex-direction: row;
+            }
+          }
+          .md\:text-6xl {
+            @media (width >= 48rem) {
+              font-size: var(--text-6xl);
+              line-height: var(--tw-leading, var(--text-6xl--line-height));
+            }
+          }
+        }
+        @property --tw-border-style {
+          syntax: "*";
+          inherits: false;
+          initial-value: solid;
+        }
+        @property --tw-leading {
+          syntax: "*";
+          inherits: false;
+        }
+        @property --tw-font-weight {
+          syntax: "*";
+          inherits: false;
+        }
+        @property --tw-tracking {
+          syntax: "*";
+          inherits: false;
+        }
+        @property --tw-shadow {
+          syntax: "*";
+          inherits: false;
+          initial-value: 0 0 #0000;
+        }
+        @property --tw-shadow-color {
+          syntax: "*";
+          inherits: false;
+        }
+        @property --tw-shadow-alpha {
+          syntax: "<percentage>";
+          inherits: false;
+          initial-value: 100%;
+        }
+        @property --tw-inset-shadow {
+          syntax: "*";
+          inherits: false;
+          initial-value: 0 0 #0000;
+        }
+        @property --tw-inset-shadow-color {
+          syntax: "*";
+          inherits: false;
+        }
+        @property --tw-inset-shadow-alpha {
+          syntax: "<percentage>";
+          inherits: false;
+          initial-value: 100%;
+        }
+        @property --tw-ring-color {
+          syntax: "*";
+          inherits: false;
+        }
+        @property --tw-ring-shadow {
+          syntax: "*";
+          inherits: false;
+          initial-value: 0 0 #0000;
+        }
+        @property --tw-inset-ring-color {
+          syntax: "*";
+          inherits: false;
+        }
+        @property --tw-inset-ring-shadow {
+          syntax: "*";
+          inherits: false;
+          initial-value: 0 0 #0000;
+        }
+        @property --tw-ring-inset {
+          syntax: "*";
+          inherits: false;
+        }
+        @property --tw-ring-offset-width {
+          syntax: "<length>";
+          inherits: false;
+          initial-value: 0px;
+        }
+        @property --tw-ring-offset-color {
+          syntax: "*";
+          inherits: false;
+          initial-value: #fff;
+        }
+        @property --tw-ring-offset-shadow {
+          syntax: "*";
+          inherits: false;
+          initial-value: 0 0 #0000;
+        }
+        @property --tw-blur {
+          syntax: "*";
+          inherits: false;
+        }
+        @property --tw-brightness {
+          syntax: "*";
+          inherits: false;
+        }
+        @property --tw-contrast {
+          syntax: "*";
+          inherits: false;
+        }
+        @property --tw-grayscale {
+          syntax: "*";
+          inherits: false;
+        }
+        @property --tw-hue-rotate {
+          syntax: "*";
+          inherits: false;
+        }
+        @property --tw-invert {
+          syntax: "*";
+          inherits: false;
+        }
+        @property --tw-opacity {
+          syntax: "*";
+          inherits: false;
+        }
+        @property --tw-saturate {
+          syntax: "*";
+          inherits: false;
+        }
+        @property --tw-sepia {
+          syntax: "*";
+          inherits: false;
+        }
+        @property --tw-drop-shadow {
+          syntax: "*";
+          inherits: false;
+        }
+        @property --tw-drop-shadow-color {
+          syntax: "*";
+          inherits: false;
+        }
+        @property --tw-drop-shadow-alpha {
+          syntax: "<percentage>";
+          inherits: false;
+          initial-value: 100%;
+        }
+        @property --tw-drop-shadow-size {
+          syntax: "*";
+          inherits: false;
+        }
+        @property --tw-backdrop-blur {
+          syntax: "*";
+          inherits: false;
+        }
+        @property --tw-backdrop-brightness {
+          syntax: "*";
+          inherits: false;
+        }
+        @property --tw-backdrop-contrast {
+          syntax: "*";
+          inherits: false;
+        }
+        @property --tw-backdrop-grayscale {
+          syntax: "*";
+          inherits: false;
+        }
+        @property --tw-backdrop-hue-rotate {
+          syntax: "*";
+          inherits: false;
+        }
+        @property --tw-backdrop-invert {
+          syntax: "*";
+          inherits: false;
+        }
+        @property --tw-backdrop-opacity {
+          syntax: "*";
+          inherits: false;
+        }
+        @property --tw-backdrop-saturate {
+          syntax: "*";
+          inherits: false;
+        }
+        @property --tw-backdrop-sepia {
+          syntax: "*";
+          inherits: false;
+        }
+        @layer properties {
+          @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or
+            ((-moz-orient: inline) and (not (color: rgb(from red r g b)))) {
+            *,
+            ::before,
+            ::after,
+            ::backdrop {
+              --tw-border-style: solid;
+              --tw-leading: initial;
+              --tw-font-weight: initial;
+              --tw-tracking: initial;
+              --tw-shadow: 0 0 #0000;
+              --tw-shadow-color: initial;
+              --tw-shadow-alpha: 100%;
+              --tw-inset-shadow: 0 0 #0000;
+              --tw-inset-shadow-color: initial;
+              --tw-inset-shadow-alpha: 100%;
+              --tw-ring-color: initial;
+              --tw-ring-shadow: 0 0 #0000;
+              --tw-inset-ring-color: initial;
+              --tw-inset-ring-shadow: 0 0 #0000;
+              --tw-ring-inset: initial;
+              --tw-ring-offset-width: 0px;
+              --tw-ring-offset-color: #fff;
+              --tw-ring-offset-shadow: 0 0 #0000;
+              --tw-blur: initial;
+              --tw-brightness: initial;
+              --tw-contrast: initial;
+              --tw-grayscale: initial;
+              --tw-hue-rotate: initial;
+              --tw-invert: initial;
+              --tw-opacity: initial;
+              --tw-saturate: initial;
+              --tw-sepia: initial;
+              --tw-drop-shadow: initial;
+              --tw-drop-shadow-color: initial;
+              --tw-drop-shadow-alpha: 100%;
+              --tw-drop-shadow-size: initial;
+              --tw-backdrop-blur: initial;
+              --tw-backdrop-brightness: initial;
+              --tw-backdrop-contrast: initial;
+              --tw-backdrop-grayscale: initial;
+              --tw-backdrop-hue-rotate: initial;
+              --tw-backdrop-invert: initial;
+              --tw-backdrop-opacity: initial;
+              --tw-backdrop-saturate: initial;
+              --tw-backdrop-sepia: initial;
+            }
+          }
+        }
+      </style>
+      <link
+        rel="preload"
+        as="image"
+        href="https://storage.googleapis.com/banani-avatars/avatar/female/25-35/East Asian/2"
+      />
+      <link
+        rel="preload"
+        as="image"
+        href="/api/flow-image/21%3A9%0Acrowd%20at%20a%20glowing%20corporate%20gala%20dinner%20with%20blue%20and%20purple%20neon%20lights%2C%20elegant%20atmosphere%2C%20wide%20angle"
+      />
+      <link
+        rel="preload"
+        as="image"
+        href="/api/flow-image/21%3A9%0ACEO%20giving%20a%20passionate%20speech%20on%20a%20large%20dark%20stage%20with%20dramatic%20white%20and%20purple%20spotlight"
+      />
+      <link
+        rel="preload"
+        as="image"
+        href="/api/flow-image/16%3A9%0Apeople%20playing%20team%20building%20games%20on%20beach%20at%20sunset%2C%20high%20contrast%2C%20cinematic"
+      />
+      <link
+        rel="preload"
+        as="image"
+        href="/api/flow-image/16%3A9%0Amodern%20corporate%20townhall%20presentation%2C%20dark%20room%2C%20bright%20screen"
+      />
+      <link
+        rel="preload"
+        as="image"
+        href="/api/flow-image/16%3A9%0Apeople%20in%20a%20seminar%20room%20taking%20notes%2C%20focus%20on%20someone%20writing%2C%20moody%20lighting"
+      />
+    </head>
+    <body>
+      <div
+        class="bg-event-bg-end text-event-text font-body w-full min-h-screen"
+      >
+        <div class="max-w-6xl mx-auto px-6 pt-16">
+          <div class="flex flex-col mb-8">
+            <div class="flex items-center gap-2 mb-4">
+              <span
+                class="px-3 py-1 bg-event-card text-event-text border border-event-border text-xs font-bold rounded uppercase tracking-wider"
+                ><span data-file="/screens/blog-modern-tech.jsx" data-idx="0"
+                  >Tin tức</span
+                ></span
+              ><span class="text-event-text opacity-80 text-sm font-medium"
+                ><span data-file="/screens/blog-modern-tech.jsx" data-idx="1"
+                  >15 Tháng 10, 2023</span
+                ></span
+              >
+            </div>
+            <h1
+              class="text-5xl md:text-6xl font-[family-name:var(--font-tech)] font-extrabold mb-6 leading-tight text-event-text tracking-tight"
+            >
+              <span data-file="/screens/blog-modern-tech.jsx" data-idx="2"
+                >VPBank tổ chức đại tiệc âm nhạc, ánh sáng ‘Light Up Viet Nam’</span
+              >
+            </h1>
+            <div class="flex items-center gap-4 mt-2">
+              <img
+                src="https://storage.googleapis.com/banani-avatars/avatar/female/25-35/East Asian/2"
+                class="w-12 h-12 rounded-full border-2 border-event-border"
+              />
+              <div class="text-left">
+                <div class="font-bold text-base text-event-text">
+                  <span data-file="/screens/blog-modern-tech.jsx" data-idx="3"
+                    >Upbeat Media</span
+                  >
+                </div>
+                <div
+                  class="text-sm text-event-text opacity-70 uppercase tracking-widest mt-1"
+                >
+                  <span data-file="/screens/blog-modern-tech.jsx" data-idx="4" style="font-size: 10px;"
+                    >Bộ phận Truyền thông Nội bộ</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full mb-16 rounded-xl border border-event-border shadow-2xl overflow-hidden bg-event-card p-2 backdrop-blur-sm"
+          >
+            <img
+              data-query="crowd at a glowing corporate gala dinner with blue and purple neon lights, elegant atmosphere, wide angle"
+              data-aspect-ratio="21:9"
+              style="aspect-ratio: 21/9"
+              src="https://thanhnien.mediacdn.vn/Uploaded/dieutrang-qc/2022_04_26/vpbank-1-4828.jpg"
+              class="w-full rounded-lg object-cover"
+            />
+          </div>
+          <div class="flex flex-col md:flex-row gap-12 relative items-start">
+            <div class="w-full md:w-1/4 md:sticky md:top-12 shrink-0">
+              <div
+                class="bg-event-card border border-event-border rounded-xl p-6 shadow-lg"
+              >
+                <h3
+                  class="font-[family-name:var(--font-tech)] text-sm font-bold uppercase tracking-widest text-event-text mb-6 pb-4 border-b border-event-border"
+                >
+                  <span data-file="/screens/blog-modern-tech.jsx" data-idx="5"
+                    >Mục lục</span
+                  >
+                </h3>
+                <ul class="flex flex-col gap-4 text-sm font-semibold">
+                  <li class="text-event-text text-base">
+                    <span data-file="/screens/blog-modern-tech.jsx" data-idx="6"
+                      >1. Khai mạc chương trình</span
+                    >
+                  </li>
+                  <li
+                    class="text-event-text opacity-60 hover:opacity-100 transition-opacity pl-4 border-l-2 border-event-border"
+                  >
+                    <span data-file="/screens/blog-modern-tech.jsx" data-idx="7"
+                      >Tầm nhìn chiến lược 2024</span
+                    >
+                  </li>
+                  <li
+                    class="text-event-text opacity-60 hover:opacity-100 transition-opacity pl-4 border-l-2 border-event-border"
+                  >
+                    <span data-file="/screens/blog-modern-tech.jsx" data-idx="8"
+                      >Vinh danh cá nhân xuất sắc</span
+                    >
+                  </li>
+                  <li class="text-event-text opacity-60">
+                    <span data-file="/screens/blog-modern-tech.jsx" data-idx="9"
+                      >2. Bùng nổ nghệ thuật</span
+                    >
+                  </li>
+                  <li class="text-event-text opacity-60">
+                    <span
+                      data-file="/screens/blog-modern-tech.jsx"
+                      data-idx="10"
+                      >3. Kết nối &amp; Lan tỏa</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="w-full md:w-3/4 flex flex-col gap-8 text-lg leading-relaxed bg-event-card border border-event-border rounded-2xl p-10 shadow-lg"
+            >
+              <p class="text-2xl font-medium text-event-text leading-snug">
+                <span data-file="/screens/blog-modern-tech.jsx" data-idx="11"
+                  >Đêm Gala Dinner 2023 mang chủ đề "Vươn Ra Biển Lớn" đã diễn
+                  ra thành công rực rỡ tại trung tâm hội nghị quốc tế. Đây là
+                  dịp để toàn thể cán bộ nhân viên công ty nhìn lại chặng đường
+                  một năm đầy thách thức nhưng cũng gặt hái được vô số thành tựu
+                  đáng tự hào.</span
+                >
+              </p>
+              <h2
+                class="text-4xl font-[family-name:var(--font-tech)] font-bold mt-8 text-event-text tracking-tight"
+              >
+                <span data-file="/screens/blog-modern-tech.jsx" data-idx="12"
+                  >1. Khai mạc chương trình và định hướng mới</span
+                >
+              </h2>
+              <p class="text-base text-event-text opacity-90">
+                <span data-file="/screens/blog-modern-tech.jsx" data-idx="13"
+                  >Mở đầu chương trình, CEO đã có bài phát biểu đầy cảm hứng,
+                  điểm lại những cột mốc quan trọng trong năm 2023. Từ việc mở
+                  rộng chi nhánh mới tại khu vực Đông Nam Á, đến việc ra mắt
+                  thành công dòng sản phẩm chủ lực, tất cả đều là minh chứng cho
+                  sự nỗ lực không ngừng nghỉ của hơn 500 nhân sự.</span
+                >
+              </p>
+              <div
+                class="my-8 bg-event-bg-end border-l-4 border-event-text p-8 rounded-r-xl"
+              >
+                <div
+                  class="text-5xl font-[family-name:var(--font-tech)] font-black text-event-text mb-4"
+                >
+                  <span data-file="/screens/blog-modern-tech.jsx" data-idx="14"
+                    >+150%</span
+                  >
+                </div>
+                <div class="text-xl font-bold text-event-text mb-2">
+                  <span data-file="/screens/blog-modern-tech.jsx" data-idx="15"
+                    >Tăng trưởng doanh thu toàn cầu</span
+                  >
+                </div>
+                <p class="text-sm text-event-text opacity-80">
+                  <span data-file="/screens/blog-modern-tech.jsx" data-idx="16"
+                    >Đây là con số kỷ lục trong suốt 10 năm hình thành và phát
+                    triển của công ty, đánh dấu bước chuyển mình mạnh mẽ trên
+                    thị trường quốc tế.</span
+                  >
+                </p>
+              </div>
+              <div
+                class="my-6 rounded-xl overflow-hidden border border-event-border bg-event-bg-end shadow-inner"
+              >
+                <img
+                  data-query="CEO giving a passionate speech on a large dark stage with dramatic white and purple spotlight"
+                  data-aspect-ratio="21:9"
+                  style="aspect-ratio: 21/9"
+                  src="https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/4/24/07-1650792959250364902204.jpg"
+                  class="w-full object-cover opacity-90"
+                />
+                <div
+                  class="text-sm text-center text-event-text p-4 border-t border-event-border font-medium tracking-wide"
+                >
+                  <span data-file="/screens/blog-modern-tech.jsx" data-idx="17"
+                    >Hai tân binh đáng gờm nhất của Vpop là Hoàng Dũng và Mỹ Anh.</span
+                  >
+                </div>
+              </div>
+              <h3
+                class="text-2xl font-[family-name:var(--font-tech)] font-bold mt-6 text-event-text"
+              >
+                <span data-file="/screens/blog-modern-tech.jsx" data-idx="18"
+                  >Vinh danh những ngôi sao sáng</span
+                >
+              </h3>
+              <p class="text-base text-event-text opacity-90">
+                <span data-file="/screens/blog-modern-tech.jsx" data-idx="19"
+                  >Trong không khí trang trọng và đầy tự hào, ban lãnh đạo đã
+                  tiến hành trao cúp và kỷ niệm chương cho 15 cá nhân xuất sắc
+                  nhất năm, những người đã có đóng góp to lớn vào sự phát triển
+                  vượt bậc của công ty. Những tràng pháo tay giòn giã kéo dài
+                  không ngớt, thể hiện sự ghi nhận xứng đáng cho những nỗ lực
+                  thầm lặng.</span
+                >
+              </p>
+              <blockquote
+                class="my-10 text-3xl italic text-center font-serif text-event-text opacity-90 px-8"
+              >
+                "<span data-file="/screens/blog-modern-tech.jsx" data-idx="20"
+                  >Thành công không đến từ một cá nhân xuất chúng, mà đến từ một
+                  tập thể đồng lòng tiến về phía trước.</span
+                >"
+              </blockquote>
+              <div class="h-px w-full bg-event-border my-6"></div>
+              <h2
+                class="text-4xl font-[family-name:var(--font-tech)] font-bold mt-4 text-event-text tracking-tight"
+              >
+                <span data-file="/screens/blog-modern-tech.jsx" data-idx="21"
+                  >2. Bùng nổ nghệ thuật</span
+                >
+              </h2>
+              <p class="text-lg text-event-text">
+                <span data-file="/screens/blog-modern-tech.jsx" data-idx="22"
+                  >Không khí hội trường thực sự bùng nổ với các màn biểu diễn
+                  "cây nhà lá vườn" nhưng được đầu tư vô cùng chuyên nghiệp. Từ
+                  những điệu múa truyền thống mang đậm bản sắc văn hóa đến các
+                  bài hát hiện đại sôi động được phối khí lại hoàn toàn
+                  mới.</span
+                >
+              </p>
+              <p class="text-sm text-event-text opacity-70 mt-2">
+                <span data-file="/screens/blog-modern-tech.jsx" data-idx="23"
+                  >* Các tiết mục được chuẩn bị ròng rã suốt 2 tháng bởi các
+                  phòng ban, với sự hướng dẫn của các biên đạo múa chuyên nghiệp
+                  được mời về từ nhà hát thành phố.</span
+                >
+              </p>
+              <h2
+                class="text-4xl font-[family-name:var(--font-tech)] font-bold mt-10 text-event-text tracking-tight"
+              >
+                <span data-file="/screens/blog-modern-tech.jsx" data-idx="24"
+                  >3. Tiệc tối &amp; Giao lưu kết nối</span
+                >
+              </h2>
+              <p class="text-base text-event-text opacity-90">
+                <span data-file="/screens/blog-modern-tech.jsx" data-idx="25"
+                  >Phần cuối của chương trình là không gian tiệc tối ấm cúng
+                  sang trọng. Tại đây, rào cản giữa các phòng ban, giữa cấp trên
+                  và cấp dưới dường như bị xóa nhòa. Mọi người cùng nhau nâng ly
+                  chúc mừng năm mới, trao nhau những lời chúc tốt đẹp nhất và
+                  cùng nhau lưu lại những khoảnh khắc đáng nhớ qua những bức
+                  hình tuyệt đẹp.</span
+                >
+              </p>
+            </div>
+          </div>
+          <div class="mt-24 pt-12 border-t border-event-border">
+            <h2
+              class="text-3xl font-[family-name:var(--font-tech)] font-bold mb-10 text-event-text uppercase tracking-widest"
+            >
+              <span data-file="/screens/blog-modern-tech.jsx" data-idx="26"
+                >Các Sự Kiện Nổi Bật Khác</span
+              >
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div
+                class="flex flex-col bg-event-card border border-event-border rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all p-2"
+              >
+                <img
+                  data-query="people playing team building games on beach at sunset, high contrast, cinematic"
+                  data-aspect-ratio="16:9"
+                  style="aspect-ratio: 16/9"
+                  src="https://storage.googleapis.com/banani-generated-images/generated-images/f8ccc36a-f40c-4690-9cf2-224e8dc88375.jpg"
+                  class="w-full object-cover"
+                />
+                <div class="p-4 flex flex-col gap-2">
+                  <div class="text-xs text-event-text opacity-80">
+                    <span
+                      data-file="/screens/blog-modern-tech.jsx"
+                      data-idx="29"
+                      >15 Thg 06, 2023</span
+                    >
+                  </div>
+                  <h3
+                    class="text-lg font-bold font-[family-name:var(--font-tech)] text-event-text text-xl mt-2"
+                  >
+                    <span
+                      data-file="/screens/blog-modern-tech.jsx"
+                      data-idx="27"
+                      >Team Building Mùa Hè: Vượt Sóng</span
+                    >
+                  </h3>
+                  <p class="text-sm line-clamp-2 text-event-text opacity-80">
+                    <span
+                      data-file="/screens/blog-modern-tech.jsx"
+                      data-idx="28"
+                      >Hành trình 3 ngày 2 đêm gắn kết tại bãi biển Nha Trang
+                      với vô vàn thử thách đồng đội...</span
+                    >
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex flex-col bg-event-card border border-event-border rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all p-2"
+              >
+                <img
+                  data-query="modern corporate townhall presentation, dark room, bright screen"
+                  data-aspect-ratio="16:9"
+                  style="aspect-ratio: 16/9"
+                  src="https://storage.googleapis.com/banani-generated-images/generated-images/85966310-5460-46b6-898a-752e36c3cfcd.jpg"
+                  class="w-full object-cover"
+                />
+                <div class="p-4 flex flex-col gap-2">
+                  <div class="text-xs text-event-text opacity-80">
+                    <span
+                      data-file="/screens/blog-modern-tech.jsx"
+                      data-idx="32"
+                      >05 Thg 10, 2023</span
+                    >
+                  </div>
+                  <h3
+                    class="text-lg font-bold font-[family-name:var(--font-tech)] text-event-text text-xl mt-2"
+                  >
+                    <span
+                      data-file="/screens/blog-modern-tech.jsx"
+                      data-idx="30"
+                      >Townhall Quý 3: Bứt Phá</span
+                    >
+                  </h3>
+                  <p class="text-sm line-clamp-2 text-event-text opacity-80">
+                    <span
+                      data-file="/screens/blog-modern-tech.jsx"
+                      data-idx="31"
+                      >Tổng kết tình hình kinh doanh quý 3 và định hướng nước
+                      rút cho những tháng cuối năm...</span
+                    >
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex flex-col bg-event-card border border-event-border rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all p-2"
+              >
+                <img
+                  data-query="people in a seminar room taking notes, focus on someone writing, moody lighting"
+                  data-aspect-ratio="16:9"
+                  style="aspect-ratio: 16/9"
+                  src="https://storage.googleapis.com/banani-generated-images/generated-images/c6890d32-fb18-4011-9d48-ab7f0e887c01.jpg"
+                  class="w-full object-cover"
+                />
+                <div class="p-4 flex flex-col gap-2">
+                  <div class="text-xs text-event-text opacity-80">
+                    <span
+                      data-file="/screens/blog-modern-tech.jsx"
+                      data-idx="35"
+                      >01 Thg 11, 2023</span
+                    >
+                  </div>
+                  <h3
+                    class="text-lg font-bold font-[family-name:var(--font-tech)] text-event-text text-xl mt-2"
+                  >
+                    <span
+                      data-file="/screens/blog-modern-tech.jsx"
+                      data-idx="33"
+                      >Workshop Lãnh Đạo Kế Cận</span
+                    >
+                  </h3>
+                  <p class="text-sm line-clamp-2 text-event-text opacity-80">
+                    <span
+                      data-file="/screens/blog-modern-tech.jsx"
+                      data-idx="34"
+                      >Chương trình đào tạo đặc biệt nhằm nâng cao năng lực cho
+                      đội ngũ quản lý cấp trung tiềm năng...</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer
+          class="bg-event-bg-end border-t border-event-border mt-24 text-event-text opacity-60 hover:opacity-100 py-12 px-6 mt-16"
+        >
+          <div
+            class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4"
+          >
+            <div class="text-xl font-bold font-[family-name:var(--font-tech)]">
+              <span data-file="/components/Footer.jsx" data-idx="0"
+                >MyBlog</span
+              >
+            </div>
+            <div class="flex gap-6 text-sm">
+              <a data-media-type="banani-button"
+                ><span data-file="/components/Footer.jsx" data-idx="1"
+                  >Về chúng tôi</span
+                ></a
+              ><a data-media-type="banani-button"
+                ><span data-file="/components/Footer.jsx" data-idx="2"
+                  >Liên hệ</span
+                ></a
+              ><a data-media-type="banani-button"
+                ><span data-file="/components/Footer.jsx" data-idx="3"
+                  >Chính sách</span
+                ></a
+              >
+            </div>
+            <div class="text-xs">
+              <span data-file="/components/Footer.jsx" data-idx="4"
+                >© 2023 MyBlog. All rights reserved.</span
+              >
+            </div>
+          </div>
+        </footer>
+      </div>
+    </body>
+  </html>
+  <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+</div>
